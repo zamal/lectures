@@ -1,7 +1,6 @@
 #+TITLE: Теория систем. Лекции.
 #+AUTHOR: Максим Захаров
 #+STARTUP: indent
-#+LaTeX_CLASS: ncc
 
 * Лекция 1 <2010-09-02 Чтв>
 
