@@ -1,5 +1,6 @@
 #+TITLE: Квантовая и оптическая электроника
 #+AUTHOR: Максим Захаров
+#+INFOJS_OPT: view:content toc:nil ltoc:nil
 
 * Лекция 1
 

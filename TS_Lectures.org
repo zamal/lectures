@@ -1,6 +1,7 @@
-#+TITLE: Теория систем. Лекции.
+#+TITLE: Теория систем
 #+AUTHOR: Максим Захаров
 #+STARTUP: indent
+#+INFOJS_OPT: view:content toc:nil ltoc:nil
 
 * Лекция 1 <2010-09-02 Чтв>
 
