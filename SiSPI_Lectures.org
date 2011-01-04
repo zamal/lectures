@@ -1,7 +1,7 @@
-#+TITLE: СиСПИ. Лекции
+#+TITLE: Системы и сети передачи информации
 #+AUTHOR: Максим Захаров
 #+STARTUP: indent
-#+INFOJS_OPT: view:content toc:nil ltoc:0
+#+INFOJS_OPT: path:org-info.js view:content toc:nil ltoc:0
 
 * Логическая многоуровневая организация ЗТКС
   CLOCK: [2010-09-02 Чтв 11:58]--[2010-09-02 Чтв 13:17] =>  1:19
