@@ -1,0 +1,3066 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>СиСПИ. Лекции</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-01-04 09:40:40 MSK"/>
+<meta name="author" content="Максим Захаров"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript" src="http://orgmode.org/org-info.js"></script>
+<script type="text/javascript" >
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "content");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">СиСПИ. Лекции</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Логическая многоуровневая организация ЗТКС </a>
+<ul>
+<li><a href="#sec-1_1">1.1 Процессы </a></li>
+<li><a href="#sec-1_2">1.2 Модель взаимодействия открытых систем </a></li>
+<li><a href="#sec-1_3">1.3 Функции уровней модели OSI </a>
+<ul>
+<li><a href="#sec-1_3_1">1.3.1 Физический уровень </a></li>
+<li><a href="#sec-1_3_2">1.3.2 Канальный уровень </a></li>
+<li><a href="#sec-1_3_3">1.3.3 Сетевой уровень </a></li>
+<li><a href="#sec-1_3_4">1.3.4 Транспортный уровень </a></li>
+<li><a href="#sec-1_3_5">1.3.5 Сеансовый уровень. </a></li>
+<li><a href="#sec-1_3_6">1.3.6 Уровень представления данных </a></li>
+<li><a href="#sec-1_3_7">1.3.7 Прикладной уровень </a></li>
+</ul>
+</li>
+<li><a href="#sec-1_4">1.4 Интерфейс и структура сообщений </a></li>
+<li><a href="#sec-1_5">1.5 Протоколы </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 Топологии сетей </a>
+<ul>
+<li><a href="#sec-2_1">2.1 Шина (Bus) </a></li>
+<li><a href="#sec-2_2">2.2 Кольцо (Ring) </a></li>
+<li><a href="#sec-2_3">2.3 Звезда (Star) </a></li>
+<li><a href="#sec-2_4">2.4 Дерево (Tree) </a></li>
+<li><a href="#sec-2_5">2.5 Сеть (Network) </a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 Методы коммутации </a>
+<ul>
+<li><a href="#sec-3_1">3.1 Сеть с коммутацией каналов </a></li>
+<li><a href="#sec-3_2">3.2 Сеть с коммутацией сообщений </a></li>
+<li><a href="#sec-3_3">3.3 Сеть с коммутацией пакетов </a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4 Физический уровень ТКС </a>
+<ul>
+<li><a href="#sec-4_1">4.1 Свойства кабеля </a></li>
+<li><a href="#sec-4_2">4.2 Стандарт ANSI/EIA/TIA-T568-A-1991 </a></li>
+<li><a href="#sec-4_3">4.3 Стандарт ISO 11801E-1995 </a></li>
+<li><a href="#sec-4_4">4.4 Коаксиальный кабель </a></li>
+<li><a href="#sec-4_5">4.5 Кабели на основе витой пары </a>
+<ul>
+<li><a href="#sec-4_5_1">4.5.1 Типы кабелей, применяемых в сетях </a></li>
+<li><a href="#sec-4_5_2">4.5.2 Обжим коннектора </a></li>
+<li><a href="#sec-4_5_3">4.5.3 Топология сети </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_6">4.6 Оптоволокно </a>
+<ul>
+<li><a href="#sec-4_6_1">4.6.1 Физические способности </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_7">4.7 Разновидности кодов </a>
+<ul>
+<li><a href="#sec-4_7_1">4.7.1 NRZ </a></li>
+<li><a href="#sec-4_7_2">4.7.2 RZ </a></li>
+<li><a href="#sec-4_7_3">4.7.3 MII </a></li>
+<li><a href="#sec-4_7_4">4.7.4 Разностный манчестер </a></li>
+</ul>
+</li>
+<li><a href="#sec-4_8">4.8 Разновидности оборудования локальных телекоммуникационных систем </a>
+<ul>
+<li><a href="#sec-4_8_1">4.8.1 Повторитель (repeater) </a></li>
+<li><a href="#sec-4_8_2">4.8.2 Концентратор (hub) </a></li>
+<li><a href="#sec-4_8_3">4.8.3 Мост (bridge) </a></li>
+<li><a href="#sec-4_8_4">4.8.4 Коммутатор (switch) </a></li>
+<li><a href="#sec-4_8_5">4.8.5 Маршрутизатор (router) </a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="#sec-5">5 Канальный уровень в модели OSI </a>
+<ul>
+<li><a href="#sec-5_1">5.1 Методы множественного доступа станций к общему каналу </a>
+<ul>
+<li><a href="#sec-5_1_1">5.1.1 Случайный множественный доступ </a></li>
+<li><a href="#sec-5_1_2">5.1.2 Детерминированные методы доступа </a></li>
+<li><a href="#sec-5_1_3">5.1.3 Комбинированные методы доступа </a></li>
+</ul>
+</li>
+<li><a href="#sec-5_2">5.2 Стандарт IEEE 802 </a>
+<ul>
+<li><a href="#sec-5_2_1">5.2.1 IEEE 802.3 Ethernet </a></li>
+<li><a href="#sec-5_2_2">5.2.2 Сеть 802.8 FDDI </a></li>
+<li><a href="#sec-5_2_3">5.2.3 Промышленный стандарт локальных сетей. Модель Pro Way </a></li>
+<li><a href="#sec-5_2_4">5.2.4 Городские сети (MAN) 802.6 </a></li>
+<li><a href="#sec-5_2_5">5.2.5 Технологии глобальных сетей </a></li>
+<li><a href="#sec-5_2_6">5.2.6 Аналоговая линия </a></li>
+<li><a href="#sec-5_2_7">5.2.7 Цифровые выделенные линии. Технология PDH </a></li>
+<li><a href="#sec-5_2_8">5.2.8 SDH/SONet </a></li>
+<li><a href="#sec-5_2_9">5.2.9 ISDN </a></li>
+<li><a href="#sec-5_2_10">5.2.10 xDSL </a></li>
+<li><a href="#sec-5_2_11">5.2.11 Протоколы канального уровня для выделенных линий </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Логическая многоуровневая организация ЗТКС </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Организация ТКС должна удовлетворять следующим требованиям.
+</p><ol>
+<li>
+Открытость. Возможность подключения дополнительных узлов, абонентов, линий связи без изменения существующих технических и программных средств.
+</li>
+<li>
+Гибкость. Сохранение работоспособности при изменении структуры системы (при выходе из строя отдельных компонентов).
+</li>
+<li>
+Эффективность. Обеспечение требуемого качества обслуживания абонентов при минимальных затратах.
+</li>
+</ol>
+
+
+
+</div>
+
+<div id="outline-container-1_1" class="outline-3">
+<h3 id="sec-1_1"><span class="section-number-3">1.1</span> Процессы </h3>
+<div class="outline-text-3" id="text-1_1">
+
+
+<ol>
+<li>
+Прикладные процессы выполняют задачи пользователя.
+</li>
+<li>
+Системные выполняют вспомогательные функции, обеспечивающие функционирование прикладных процессов.
+</li>
+</ol>
+
+
+<p>
+Ввод и вывод данных, необходимых процессу, производится <b>сообщениями</b> через программно-организованные логические точки, называемые порты.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1_2" class="outline-3">
+<h3 id="sec-1_2"><span class="section-number-3">1.2</span> Модель взаимодействия открытых систем </h3>
+<div class="outline-text-3" id="text-1_2">
+
+
+<p>
+В 1978 году международная организация по стандартизации ISO ввела новую модель стандартов, которая получила название "модель взаимодействия открытых систем" &mdash; ISO/OSI.
+</p>
+<p>
+Данная модель обладала следующими особенностями:
+</p><ol>
+<li>
+Является стандартом в передаче данных, позволяющим системам различных производителей устанавливать сетевые соединения.
+</li>
+<li>
+Состоит из 7 уровней со специфическим набором функций и включает описание межуровневых интерфейсов.
+</li>
+<li>
+Определяет набор протоколов и интерфейсов для каждого уровня.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1_3" class="outline-3">
+<h3 id="sec-1_3"><span class="section-number-3">1.3</span> Функции уровней модели OSI </h3>
+<div class="outline-text-3" id="text-1_3">
+
+
+
+</div>
+
+<div id="outline-container-1_3_1" class="outline-4">
+<h4 id="sec-1_3_1"><span class="section-number-4">1.3.1</span> Физический уровень </h4>
+<div class="outline-text-4" id="text-1_3_1">
+
+
+<p>
+Контролирует путь, по которому поток битов данных передаётся и принимается из физической среды передачи. Он определяет электрический, оптический, электромагнитный и механический интерфейс для передающей среды. Он принимает сигналы из среды передачи и преобразует их в цифровые данные, которые используют все вышележащие уровни.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1_3_2" class="outline-4">
+<h4 id="sec-1_3_2"><span class="section-number-4">1.3.2</span> Канальный уровень </h4>
+<div class="outline-text-4" id="text-1_3_2">
+
+
+<p>
+Обеспечивает безошибочную передачу кадров данных между системами через физический уровень.
+</p>
+<p>
+Выполняет следующие функции:
+</p><ol>
+<li>
+Установление и разрыв связи между двумя системами, определёнными адресами их сетевых адаптеров (MAC-адрес).
+</li>
+<li>
+Последовательная передача и приём кадров.
+</li>
+<li>
+Проверка правильности данных в принятых кадрах и подтверждение успешного приёма кадров (функция квитирования).
+</li>
+<li>
+Ожидание подтверждения приёма кадра; инициализация повторной передачи кадра; разрешение вопросов, связанных с дублированием кадров.
+</li>
+<li>
+Определение границ кадров.
+</li>
+<li>
+Управление доступом в передающую среду путём определения оптимального момента начала передачи.
+</li>
+<li>
+Анализ пункта назначения принятого кадра.
+</li>
+</ol>
+
+
+<p>
+Протоколы канального уровня называются протоколами прямой передачи или пиринговые протоколы. Они устанавливают соединения только с непосредственными соседями в сети, с которыми у них общая среда передачи.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1_3_3" class="outline-4">
+<h4 id="sec-1_3_3"><span class="section-number-4">1.3.3</span> Сетевой уровень </h4>
+<div class="outline-text-4" id="text-1_3_3">
+
+
+<p>
+Контролирует работу сети. Он определяет какой физический путь должны пройти данные исходя из логического адреса получателя. Протокольная единица &mdash; пакет.
+</p>
+<p>
+Функции:
+</p><ol>
+<li>
+Передача пакета маршрутизатору в том случае, если сетевой адрес пункта назначения не находится в той же подсети, что и отправитель.
+</li>
+<li>
+Установление однозначной связи логического адреса на сетевом уровне и физического адреса на канальном &mdash; ARP.
+</li>
+<li>
+Возможность использования альтернативного маршрута в случае отказа основного маршрутизатора.
+</li>
+<li>
+Управление фрагментацией пакетов.
+</li>
+<li>
+Возможность учёта количества переданных пакетов для работы биллинговой системы.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1_3_4" class="outline-4">
+<h4 id="sec-1_3_4"><span class="section-number-4">1.3.4</span> Транспортный уровень </h4>
+<div class="outline-text-4" id="text-1_3_4">
+
+
+<p>
+Протокольная единица &mdash; сегмент/дейтаграмма.
+</p>
+<p>
+Гарантирует доставку сообщений в том порядке, в каком они были посланы. Гарантирует отсутствие потерь и дублирования информации.
+</p>
+<p>
+Функции:
+</p><ol>
+<li>
+Приём сообщений с вышележащего уровня и, при необходимости, разбивка их на сегменты.
+</li>
+<li>
+Обеспечение надёжной и гарантированной доставки сообщений и подтверждение успешного приёма.
+</li>
+<li>
+Управление передающей системой с помощью команд на прекращение передачи, если приёмные буферы заполнены.
+</li>
+<li>
+Мультиплексирование нескольких потоков сообщений между процессами в одном логическом соединении.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1_3_5" class="outline-4">
+<h4 id="sec-1_3_5"><span class="section-number-4">1.3.5</span> Сеансовый уровень. </h4>
+<div class="outline-text-4" id="text-1_3_5">
+
+
+<p>
+Протокольная единица &mdash; сообщение.
+</p>
+<p>
+Устанавливает связь или сеанс между процессами, работающими в различных системах, и поддерживает обмен данных в режиме сообщений
+</p>
+<p>
+Функции:
+</p><ol>
+<li>
+Позволяет прикладным процессам регистрировать уникальные адреса (номера портов).
+</li>
+<li>
+Установление, мониторинг и окончание сеанса по виртуальной сети.
+</li>
+<li>
+Определение границ сообщений с помощью информации из заголовка.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1_3_6" class="outline-4">
+<h4 id="sec-1_3_6"><span class="section-number-4">1.3.6</span> Уровень представления данных </h4>
+<div class="outline-text-4" id="text-1_3_6">
+
+
+<p>
+Используют данные пользователя.
+</p>
+<p>
+Служат транслятором данных, передаваемых по сети. Преобразуют данных из формата приложения в общепринятый формат.
+</p>
+<p>
+Функции:
+</p><ol>
+<li>
+Трансляция символов в коды.
+</li>
+<li>
+Конвертирование данных.
+</li>
+<li>
+Сжатие данных.
+</li>
+<li>
+Шифрование.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1_3_7" class="outline-4">
+<h4 id="sec-1_3_7"><span class="section-number-4">1.3.7</span> Прикладной уровень </h4>
+<div class="outline-text-4" id="text-1_3_7">
+
+
+<p>
+Предоставляет пользователю доступ к сетевому сервису. Сколько сервисов, столько и функций.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-1_4" class="outline-3">
+<h3 id="sec-1_4"><span class="section-number-3">1.4</span> Интерфейс и структура сообщений </h3>
+<div class="outline-text-3" id="text-1_4">
+
+
+<p>
+Интерфейс определяет структуру данных и алгоритм обмена данными между соседними уровнями одной системы.
+</p>
+<p>
+Многоуровневая организация системы для эффективного управления требует модификации сообщений на каждом уровне. Модификация заключается в добавлении заголовка и концевика, в которых содержится информация, необходимая для управления.
+</p>
+<p>
+<img src="SiSPI_pictures/mess_strucr.png"  alt="SiSPI_pictures/mess_strucr.png" />
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1_5" class="outline-3">
+<h3 id="sec-1_5"><span class="section-number-3">1.5</span> Протоколы </h3>
+<div class="outline-text-3" id="text-1_5">
+
+
+<p>
+<img src="SiSPI_pictures/protocol.png"  alt="SiSPI_pictures/protocol.png" />
+</p>
+<p>
+Совокупность правил взаимодействия процессов одноимённых уровней разных систем называется <i>протокол</i>.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Топологии сетей </h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+<i>Топология</i> &mdash; геометрическая форма или физическая связанность сети.
+</p>
+
+</div>
+
+<div id="outline-container-2_1" class="outline-3">
+<h3 id="sec-2_1"><span class="section-number-3">2.1</span> Шина (Bus) </h3>
+<div class="outline-text-3" id="text-2_1">
+
+
+<p>
+<img src="SiSPI_pictures/bus.png"  alt="SiSPI_pictures/bus.png" />
+</p>
+<p>
+Преимущества:
+</p><ul>
+<li>
+гибкость и открытость;
+</li>
+<li>
+простота управления.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+в случае отказа канала вся сеть не функционирует;
+</li>
+<li>
+пропускная способность делится между всеми абонентами сети;
+</li>
+<li>
+длина шина ограничена мощностью сигнала;
+</li>
+<li>
+если два узла начинают передавать одновременно, то возникает ошибка.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2_2" class="outline-3">
+<h3 id="sec-2_2"><span class="section-number-3">2.2</span> Кольцо (Ring) </h3>
+<div class="outline-text-3" id="text-2_2">
+
+
+<p>
+<img src="SiSPI_pictures/ring.png"  alt="SiSPI_pictures/ring.png" />
+</p>
+<p>
+Преимущества:
+</p><ul>
+<li>
+сигнал усиливается каждым промежуточным узлом, т. е. размер кольца может быть очень большим;
+</li>
+<li>
+чёткий географический приоритет между станциями;
+</li>
+<li>
+эффективное использование пропускной способности;
+</li>
+<li>
+невозможность коллизий или столкновений.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+выход из строя любого абонента приведёт к неработоспособности сети;
+</li>
+<li>
+низкая открытость сети.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2_3" class="outline-3">
+<h3 id="sec-2_3"><span class="section-number-3">2.3</span> Звезда (Star) </h3>
+<div class="outline-text-3" id="text-2_3">
+
+
+<p>
+<img src="SiSPI_pictures/star.png"  alt="SiSPI_pictures/star.png" />
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+выход из строя абонента или кабеля этого абонента не влияет на работоспособность сети (лёгкая локализация неисправностей сети);
+</li>
+<li>
+централизованное управление, отсутствие перегрузок и конфликтов.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+требования к центральному узлу повышены и по надёжности и по работоспособности;
+</li>
+<li>
+количество абонентов в сети ограничено.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2_4" class="outline-3">
+<h3 id="sec-2_4"><span class="section-number-3">2.4</span> Дерево (Tree) </h3>
+<div class="outline-text-3" id="text-2_4">
+
+
+<p>
+<img src="SiSPI_pictures/tree.png"  alt="SiSPI_pictures/tree.png" />
+</p>
+<p>
+Разновидность топологии "звезда". По такой топологии обычно реализуется управление в больших сетях.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2_5" class="outline-3">
+<h3 id="sec-2_5"><span class="section-number-3">2.5</span> Сеть (Network) </h3>
+<div class="outline-text-3" id="text-2_5">
+
+
+<p>
+Представляет собой древовидную топологию, в которой добавлены резервные или альтернативные связи до отдельных узлов.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Методы коммутации </h2>
+<div class="outline-text-2" id="text-3">
+
+
+<p>
+По способам передачи данных различают сети с коммутацией каналов, с коммутацией сообщений и с коммутацией пакетов.
+</p>
+
+</div>
+
+<div id="outline-container-3_1" class="outline-3">
+<h3 id="sec-3_1"><span class="section-number-3">3.1</span> Сеть с коммутацией каналов </h3>
+<div class="outline-text-3" id="text-3_1">
+
+
+<p>
+Рисунок 7
+</p>
+<p>
+Для передачи данных необходимо установление между пользователями прямого физического соединения.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+работа в режиме реального времени и полностью используют пропускную способность всех каналов; 
+</li>
+<li>
+эффективна при передаче больших объёмов данных.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+система работает с отказами, т. е. необходимо дожидаться освобождения линии связи;
+</li>
+<li>
+невозможность приоритетной передачи данных;
+</li>
+<li>
+неэффективна при передаче небольших объёмов данных.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3_2" class="outline-3">
+<h3 id="sec-3_2"><span class="section-number-3">3.2</span> Сеть с коммутацией сообщений </h3>
+<div class="outline-text-3" id="text-3_2">
+
+
+<p>
+Рисунок 8
+</p>
+<p>
+Сообщение снабжается заголовком, в котором указывается получатель и передаётся последовательно от узла коммутации к узлу.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+нет сигналов "занято" или отказов сети;
+</li>
+<li>
+возможность приоритетной передачи;
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+нет режима реального времени;
+</li>
+<li>
+неэффективна для передачи больших сообщений (может не хватить памяти в буферах).
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3_3" class="outline-3">
+<h3 id="sec-3_3"><span class="section-number-3">3.3</span> Сеть с коммутацией пакетов </h3>
+<div class="outline-text-3" id="text-3_3">
+
+
+<p>
+Рисунок 9
+</p>
+<p>
+Каждое сообщение разбивается на пакеты. Каждый пакет имеет заголовок, содержащий достаточно информации для нахождения адресата, и каждый пакет независимым образом отправляется по сети.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+требования к промежуточным узлам снижаются;
+</li>
+<li>
+возможна приоритетная передача;
+</li>
+<li>
+в случае отказа части сети может быть найден альтернативный маршрут.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+возможна потери пакетов;
+</li>
+<li>
+пакеты могут прийти в неправильном порядке;
+</li>
+<li>
+количество служебной части пакета достаточно велико.
+</li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Физический уровень ТКС </h2>
+<div class="outline-text-2" id="text-4">
+
+
+
+</div>
+
+<div id="outline-container-4_1" class="outline-3">
+<h3 id="sec-4_1"><span class="section-number-3">4.1</span> Свойства кабеля </h3>
+<div class="outline-text-3" id="text-4_1">
+
+
+<ol>
+<li>
+Исполнение кабеля (пожаростойкость). <i>Пленум</i> &mdash; пространство между полом и потолком, либо между стенами, которое служит для вентиляции и теплоизоляции и может быть использовано для прокладки кабельной системы. Кабель в пленумном исполнении имеет оболочку, которая не горит и не выделяет при нагревании токсичных газов. Обычно эта оболочка делается из тефлона.
+</li>
+<li>
+Диаметр сечения жилы кабеля. Для указания диаметра используется класс AWG.
+</li>
+<li>
+Наличие экрана кабеля. Экран кабеля используется для защиты от внешнего электромагнитного поля. Экран может быть выполнен 2 способами:
+<ul>
+<li>
+с помощью сетки (плетёный) &mdash; лучше экранирование;
+</li>
+<li>
+с помощью спирально намотанной фольги &mdash; легче гнётся.
+</li>
+</ul>
+</li>
+<li>
+Категория кабеля. Совокупность характеристик, необходимых пользователю.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_2" class="outline-3">
+<h3 id="sec-4_2"><span class="section-number-3">4.2</span> Стандарт ANSI/EIA/TIA-T568-A-1991 </h3>
+<div class="outline-text-3" id="text-4_2">
+
+
+<p>
+Стандарт T-568 определяет кабельную систему для передачи данных и для офисных коммуникаций. Он позволяет использовать для этих целей следующие типы кабелей:
+</p><ol>
+<li>
+Неэкранированная витая пара (UTP) с волновым сопротивлением 100 Ом и диаметром сечения жилы 22/24 AWG.
+</li>
+<li>
+Экранированная витая пара (STP) с волновым сопротивлением 150 Ом.
+</li>
+<li>
+Одномодовое оптоволокно (SMF) с диаметром внутренней жилы и оплётки 8,3/125 мкн.
+</li>
+<li>
+Многомодовое оптоволокно (MMF) с диаметром внутренней жилы и оплётки 62,5/125 мкн.
+</li>
+</ol>
+
+
+<p>
+Для каждого кабеля определены следующие элементы:
+</p><ol>
+<li>
+Характеристики, позволяющие определить уровень производительности.
+</li>
+<li>
+Топологию и длину сегментов кабеля.
+</li>
+<li>
+Спецификации коннекторов и схемы расположения выводов.
+</li>
+</ol>
+
+
+<p>
+Документ также включает правила для прокладки кабеля внутри здания. Здание разделяется на несколько подсистем.
+</p><ol>
+<li>
+Вход в здание. Это место, в котором сопрягаются внутренняя и внешняя кабельные системы.
+</li>
+<li>
+Аппаратная комната. Отдельное помещение, в котором располагается телекоммуникационное оборудование, являющееся интерфейсом между магистральной и горизонтальной кабельной системой.
+</li>
+<li>
+Телекоммуникационный шкаф. Место расположения телекоммуникационного оборудования в помещении или коридоре.
+</li>
+<li>
+Магистраль. Кабельная система, соединяющая аппаратные комнаты, телекоммуникационные шкафы и точки входа в здание.
+</li>
+<li>
+Горизонтальная кабельная разводка. Кабельная система и аппаратное обеспечение, используемое для соединения телекоммуникационных шкафов и аппаратных комнат с рабочей областью.
+</li>
+<li>
+Рабочая область. Компоненты для присоединения телекоммуникационных отводов к рабочим станциям.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_3" class="outline-3">
+<h3 id="sec-4_3"><span class="section-number-3">4.3</span> Стандарт ISO 11801E-1995 </h3>
+<div class="outline-text-3" id="text-4_3">
+
+
+<p>
+В стандарте добавлены несколько типов кабелей, применяемых в европейских коммуникациях.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4_4" class="outline-3">
+<h3 id="sec-4_4"><span class="section-number-3">4.4</span> Коаксиальный кабель </h3>
+<div class="outline-text-3" id="text-4_4">
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="right" /><col class="left" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Маркировка</th><th scope="col" class="left">Диаметр</th><th scope="col" class="right">Затух.</th><th scope="col" class="left">Коннектор</th><th scope="col" class="right">\(\rho\)</th><th scope="col" class="left">Тип</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">RG-8/U</td><td class="left">0.405"</td><td class="right">1.9</td><td class="left">N</td><td class="right">50</td><td class="left">Thick Eth 10base5</td></tr>
+<tr><td class="left">RG-58A/U</td><td class="left">0.195"</td><td class="right">4.5</td><td class="left">BNC</td><td class="right">50</td><td class="left">Thin Eth 10base2</td></tr>
+<tr><td class="left">RG-6/U</td><td class="left">0.242"</td><td class="right">3.4</td><td class="left">F</td><td class="right">45</td><td class="left">Cable TV</td></tr>
+</tbody>
+</table>
+
+
+<p>
+/U &mdash; центральная жила сплошная.
+A/U &mdash; центральная жила плетёная.
+</p>
+<p>
+Достоинства сетей с коаксиальным кабелем:
+</p><ul>
+<li>
+большая длина сегмента;
+</li>
+<li>
+дешевизна кабеля, лёгкость монтажа;
+</li>
+<li>
+малый расход кабеля.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+Максимальная скорость передачи данных 10 Мб/сек.
+
+</li>
+<li>
+Толстый Ethernet
+</li>
+<li>
+Тонкий Ethernet
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_5" class="outline-3">
+<h3 id="sec-4_5"><span class="section-number-3">4.5</span> Кабели на основе витой пары </h3>
+<div class="outline-text-3" id="text-4_5">
+
+
+
+</div>
+
+<div id="outline-container-4_5_1" class="outline-4">
+<h4 id="sec-4_5_1"><span class="section-number-4">4.5.1</span> Типы кабелей, применяемых в сетях </h4>
+<div class="outline-text-4" id="text-4_5_1">
+
+
+<ol>
+<li>
+UTP &mdash; неэкранированная витая пара.
+</li>
+<li>
+FTP (F/UTP) &mdash; присутствует общий внешний экран из фольги.
+</li>
+<li>
+STP &mdash; присутствует защита каждой пары и общий экран всего кабеля в виде сетки.
+</li>
+<li>
+SFTP &mdash; внешний экран из сетки и каждая пара в фольге.
+</li>
+<li>
+SF/UTP &mdash; внешний экран из сетки и фольги. Каждая пара без защиты.
+</li>
+</ol>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Категория</th><th scope="col" class="left">ПЧ</th><th scope="col" class="left">Тип сети</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">Cat 1</td><td class="left">до 100 кГц</td><td class="left">1PR ТЛФ, сигнализ.</td></tr>
+<tr><td class="left">Cat 2</td><td class="left">до 1 МГц</td><td class="left">2PR TokenRing, ArcNet (4Мб/сек)</td></tr>
+<tr><td class="left">Cat 3</td><td class="left">до 16 МГц</td><td class="left">4PR 10BaseT, 100BaseT4</td></tr>
+<tr><td class="left">Cat 4</td><td class="left">до 20 МГц</td><td class="left">4PR TokenRing(16 Мб/сек)</td></tr>
+<tr><td class="left">Cat 5</td><td class="left">до 100 МГц</td><td class="left">4PR 100BaseTX</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">Cat 5e</td><td class="left">125 МГЦ</td><td class="left">4PR 100BaseTX, 1000BaseTX</td></tr>
+<tr><td class="left">Cat 6</td><td class="left">до 250 МГц</td><td class="left">4PR 1000 Мб/сек</td></tr>
+<tr><td class="left">Cat 6a</td><td class="left">до 500 МГц</td><td class="left">10 Гб/сек</td></tr>
+<tr><td class="left">Cat 7</td><td class="left">до 700</td><td class="left">S/FTP 4PR</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_5_2" class="outline-4">
+<h4 id="sec-4_5_2"><span class="section-number-4">4.5.2</span> Обжим коннектора </h4>
+<div class="outline-text-4" id="text-4_5_2">
+
+
+<p>
+8P8C
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="right" /><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right"></th><th scope="col" class="left"></th><th scope="col" class="left">T568A</th><th scope="col" class="left">T568B</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">1</td><td class="left">Tx +</td><td class="left">БС</td><td class="left">БО</td></tr>
+<tr><td class="right">2</td><td class="left">Tx -</td><td class="left">С</td><td class="left">О</td></tr>
+<tr><td class="right">3</td><td class="left">Rx +</td><td class="left">БО</td><td class="left">БС</td></tr>
+<tr><td class="right">4</td><td class="left"></td><td class="left">З</td><td class="left">З</td></tr>
+<tr><td class="right">5</td><td class="left"></td><td class="left">БЗ</td><td class="left">БЗ</td></tr>
+<tr><td class="right">6</td><td class="left">Rx -</td><td class="left">О</td><td class="left">С</td></tr>
+<tr><td class="right">7</td><td class="left"></td><td class="left">БК</td><td class="left">БК</td></tr>
+<tr><td class="right">8</td><td class="left"></td><td class="left">К</td><td class="left">К</td></tr>
+</tbody>
+</table>
+
+
+<p>
+Если сегмент кабеля используется для подключения компьютера к сетевому оборудованию, применяется прямой способ обжима кабеля, когда каждый конец обжимается одинаково.
+</p>
+<p>
+Если сегмент кабеля используется для соединения двух компьютеров, применяется кроссовое соединение кабеля, в котором на одном из концов сегмента приёмные и передающие пары меняются местами.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4_5_3" class="outline-4">
+<h4 id="sec-4_5_3"><span class="section-number-4">4.5.3</span> Топология сети </h4>
+<div class="outline-text-4" id="text-4_5_3">
+
+
+<p>
+В центре сети ставится сетевое устройство &mdash; свитч или хаб. Каждое устройство подключается отдельным сегментом. Максимальная длина сегмента 100 м.
+</p>
+<p>
+Если скорость сети 10 Мб/сек, то количество последовательно соединённых сетевых устройств равно 4.
+</p>
+<p>
+Для скорости 100 Мб/сек всё зависит от способности сетевого устройства.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4_6" class="outline-3">
+<h3 id="sec-4_6"><span class="section-number-3">4.6</span> Оптоволокно </h3>
+<div class="outline-text-3" id="text-4_6">
+
+
+
+</div>
+
+<div id="outline-container-4_6_1" class="outline-4">
+<h4 id="sec-4_6_1"><span class="section-number-4">4.6.1</span> Физические способности </h4>
+<div class="outline-text-4" id="text-4_6_1">
+
+
+<ol>
+<li>
+Широкополосность кабеля.
+</li>
+<li>
+Малые затухания сигнала в оптоволокне.
+</li>
+<li>
+Помехозащищённость и отсутствие влияния внешних электромагнитных полей.
+</li>
+<li>
+По волокну могут распространятся оптические сигналы разной поляризации без взаимного влияния друг на друга. Возможна дуплексная передача.
+</li>
+</ol>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4_7" class="outline-3">
+<h3 id="sec-4_7"><span class="section-number-3">4.7</span> Разновидности кодов </h3>
+<div class="outline-text-3" id="text-4_7">
+
+
+
+</div>
+
+<div id="outline-container-4_7_1" class="outline-4">
+<h4 id="sec-4_7_1"><span class="section-number-4">4.7.1</span> NRZ </h4>
+<div class="outline-text-4" id="text-4_7_1">
+
+
+<p>
+<img src="SiSPI_pictures/NRZcode.png"  alt="SiSPI_pictures/NRZcode.png" />
+</p>
+<p>
+Является простейшим кодом и представляет собой обычный цифровой сигнал. Логическому нулю соответствует низкий уровень сигнала в пределах битового интервала, а логической единице &mdash; высокий.
+</p>
+<p>
+10 Мб/с -&gt; 1010 - 5 МГц. От 0 до 5 МГц.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+нет необходимости использовать дополнительное оборудование для  передачи;
+</li>
+<li>
+низкая требуемая полоса пропускания кабеля.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+обнаружить передачу при передаче большой последовательности нулей невозможно;
+</li>
+<li>
+невозможность передавать длинные последовательности из-за рассинхронизации передатчика и приёмника.
+</li>
+<li>
+из-за наличия постоянной составляющей в коде невозможно обеспечить гальваническую развязку устройств и линий связи с помощью трансформатора.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_7_2" class="outline-4">
+<h4 id="sec-4_7_2"><span class="section-number-4">4.7.2</span> RZ </h4>
+<div class="outline-text-4" id="text-4_7_2">
+
+
+<p>
+<img src="SiSPI_pictures/RZcode.png"  alt="SiSPI_pictures/RZcode.png" />
+</p>
+<p>
+Трёхуровневый код, в котором каждый битовый интервал разбивается на два отрезка. В первой половине передаётся значащий уровень сигнала, а во второй половине нулевой. Логическому нулю соответствует положительный переход с низкого на высокий, логической единице отрицательный.
+</p>
+<p>
+10 Мб/с -&gt; 10 МГц.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+код самосинхронизирующийся. По переходу в центре бита синхронизируются приёмник и передатчик;
+</li>
+<li>
+отсутствует постоянная составляющая.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+три уровня;
+</li>
+<li>
+сложность оборудования;
+</li>
+<li>
+большая требуемая полоса пропускания.
+</li>
+</ul>
+
+
+<p>
+Такой можно использовать в оптоволоконных сетях из-за того, что уровень там довольно постоянный, причём высокому уровню соответствует сильный свет, нулевому средний свет, низкому отсутствие света.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4_7_3" class="outline-4">
+<h4 id="sec-4_7_3"><span class="section-number-4">4.7.3</span> MII </h4>
+<div class="outline-text-4" id="text-4_7_3">
+
+
+<p>
+<img src="SiSPI_pictures/Manchester_code.png"  alt="SiSPI_pictures/Manchester_code.png" />
+TODO Картинку проверить
+</p>
+<p>
+Двухуровневый код. Внутри каждого битового интервала присутствует переход. Логическому нулю соответствует положительный переход, логической единице отрицательный.
+</p>
+<p>
+10 Мб/с -&gt; 111, 000 - 10 МГц. 101 - 5 МГц.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+самосинхронизирующийся двухуровневый код;
+</li>
+<li>
+2 полосовых фильтра на 5 и 10 МГц отфильтровывают помехи постоянной составляющей в канале;
+</li>
+<li>
+для определения занятости канала необходимо контролировать несущую в течение одного битового интервала;
+</li>
+<li>
+для гальванической развязки можно использовать импульсный трансформатор.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+большая требуемая полоса частот.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_7_4" class="outline-4">
+<h4 id="sec-4_7_4"><span class="section-number-4">4.7.4</span> Разностный манчестер </h4>
+<div class="outline-text-4" id="text-4_7_4">
+
+
+<p>
+<img src="SiSPI_pictures/Differential_manchester_encoding.png"  alt="SiSPI_pictures/Differential_manchester_encoding.png" />
+</p>
+<p>
+Значение бита определяется по наличию перехода в начале битового интервала. Логический ноль &mdash; переход в начале есть, логическая единица &mdash; перехода в начале нет. В центре битового интервала переход есть всегда.
+</p>
+<p>
+В современных сетях со скоростями 100 Мб и выше главным требованием к коду является малая полоса пропускания. Поэтому в таких сетях используются разновидности кода NRZ &mdash; MLT3, NRZi и дополнительные кодовые преобразования 4B/5B.
+</p>
+<p>
+MLT3 &mdash; трёхуровневый код, в котором ноль повторяет предыдущее состояние среды, а единица изменяет состояние среды по следующему закону +U 0, -U 0.
+</p>
+<p>
+Узнать про MLT3, NRZi и дополнительные кодовые преобразования 4B/5B (62B/64B).
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4_8" class="outline-3">
+<h3 id="sec-4_8"><span class="section-number-3">4.8</span> Разновидности оборудования локальных телекоммуникационных систем </h3>
+<div class="outline-text-3" id="text-4_8">
+
+
+
+</div>
+
+<div id="outline-container-4_8_1" class="outline-4">
+<h4 id="sec-4_8_1"><span class="section-number-4">4.8.1</span> Повторитель (repeater) </h4>
+<div class="outline-text-4" id="text-4_8_1">
+
+
+<p>
+При передаче сигнала по кабелю сигнал испытывает затухание. Для увеличения длины сегмента используются промежуточные усилители сигнала, называемые репиторы.
+</p>
+<p>
+<i>Репитор</i> &mdash; двехпортовое устройство, которое принимает сигнал из одного порта, усиливает его и отправляет в другой свой порт.
+</p>
+<p>
+Повторитель функционирует только на физическом уровне, не умеет читать данные канального уровня и выше. Следовательно не может осуществлять фильтрацию передаваемых кадров.
+</p>
+<p>
+Повторитель формирует единую область коллизий или общую среду передачи из всех подключённых к нему сегментов.
+</p>
+<p>
+Для сети 10 Мб/с = 4, 100 Мб/с = 1.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4_8_2" class="outline-4">
+<h4 id="sec-4_8_2"><span class="section-number-4">4.8.2</span> Концентратор (hub) </h4>
+<div class="outline-text-4" id="text-4_8_2">
+
+
+<p>
+<i>Хаб</i> (многопортовый повторитель) &mdash; многопортовое устройство, выполняющее роль центрального звена в сети с топологией звезда, построенной на витой паре.
+</p>
+<p>
+Принимает сигнал из одного порта, усиливает его и отправляет во все остальные порты.
+</p>
+<p>
+Работает на физическом уровне, формирует единую область коллизий для всех подключённых к нему сегментов.
+</p>
+<ul>
+<li id="sec-4_8_2_1">Исполнение концентраторов <br/>
+
+<ol>
+<li>
+Автономные концентраторы. Используются для формирования небольших сетей до 16 портов. Возможно отсутствует порт для соединения с другими концентраторами.
+</li>
+<li>
+Наращиваемые концентраторы. Имеют возможность для соединения нескольких концентраторов друг с другом с помощью специального порта и специального короткого кабеля. Полученное устройство работает как один большой концентратор.
+</li>
+<li>
+Модульные концентраторы. Представляют собой шасси, которые содержат несколько слотов для подключения отдельных портов. Шасси предоставляет для всех общий для всех источник питания и шину для взаимодействия. При этом модули могут относиться к сетям, построенным по различным технологиям.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4_8_2_2">Дополнительные функции концентраторов <br/>
+
+<p>
+Если концентратор функционирует на канальном уровне и может читать заголовки протокола канального уровня, он имеет следующие возможности:
+</p><ol>
+<li>
+Защита от несанкционированного подключения к порту путём привязки конкретного MAC-адреса к конкретному порту. Возможность принудительного отключения неиспользуемых портов.
+</li>
+<li>
+Отключение неправильно работающих сегментов. Ошибки, которые можно контролировать:
+<ul>
+<li>
+связанные с длиной кадра 64&hellip;1518;
+</li>
+<li>
+неверная контрольная сумма кадра, либо неправильно оформленный заголовок кадра;
+</li>
+<li>
+множественные коллизии. Если порта стал источником столкновения пакетов 60 раз подряд, его отключают;
+</li>
+<li>
+затянувшаяся передача. Если кадр передаётся дольше кадра максимальной длины в 3 раза;
+</li>
+</ul>
+</li>
+<li>
+Поддержка резервных связей.
+</li>
+<li>
+Управление по протоколу SNMP.
+</li>
+</ol>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-4_8_3" class="outline-4">
+<h4 id="sec-4_8_3"><span class="section-number-4">4.8.3</span> Мост (bridge) </h4>
+<div class="outline-text-4" id="text-4_8_3">
+
+
+<p>
+<i>Мост</i> &mdash; многопортовое устройство (друхпортовое), работающее на канальном уровне и способное разделять единую область коллизий подключённых к нему сегментов.
+</p>
+<p>
+Мост принимает кадр из одного порта и определяет местоположение получателя этого кадра. 
+</p>
+<p>
+Если получатель расположен в другом сегменте, мост передаёт кадр в этот сегмент. Если получатель находится в том же сегменте, что и отравитель, пакет уничтожается.
+</p>
+<p>
+Обычные режим работы моста называется <i>прозрачный режим</i>, т.е. он не имеет собственного MAC-адреса и для сетевых устройств невидим, при этом абоненты подключённых к мосту сегментов могут одновременно передавать кадры без возможных коллизий.
+</p>
+<p>
+Основным недостатком моста является не поддержка петлевых или кольцевых топологий сетей.
+</p>
+<p>
+Варианты исполнения мостов:
+</p><ol>
+<li>
+Прозрачный мост. Объединяет сегменты, построенные по одинаковым технологиям. Никакого перекодирования кадра не происходит внутри порта, возможно работать без полной буферизации кадра, т. е. напрямую.
+</li>
+<li>
+Преобразующий мост. Объединяет сегменты, построенные по разным технологиям. Принимает полностью кадр в буфер, присваивает ему новый заголовок канального уровня и отправляет в соответствующий сегмент.
+</li>
+<li>
+Удалённый мост. Пара удалённых мостов может организовать соединение двух локальных сетей через глобальную сеть. Основной задачей является согласование высокой скорости локальной сети с низкой скоростью глобальной через:
+<ul>
+<li>
+большой объём буфера;
+</li>
+<li>
+сжатие трафика;
+</li>
+<li>
+принудительное дублирование служебного трафика.
+</li>
+</ul>
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4_8_4" class="outline-4">
+<h4 id="sec-4_8_4"><span class="section-number-4">4.8.4</span> Коммутатор (switch) </h4>
+<div class="outline-text-4" id="text-4_8_4">
+
+
+<p>
+<i>Коммутатор</i> &mdash; многопортовое устройство, выполняющее роль центрального звена в сети с топологией звезда и функционирующее следующим образом.
+</p>
+<p>
+Кадр принимается из одного порта и отправляется в порт, к которому подключён получатель. При этом коммутатор может обеспечивать несколько соединений пар портов.
+</p>
+<p>
+Любое соединение коммутаторов двух портов аналогично выделенному соединению точка-точка и обеспечивается максимальной пропускной способностью сети.
+</p>
+<ul>
+<li id="sec-4_8_4_1">Конструкции коммутаторов <br/>
+
+<p>
+Каждый порт коммутатора обслуживает собственный процессор, называемый EPP (ethernet port processor). Координирует работу всех процессоров системный модуль, в котором есть дополнительный процессор &mdash; центральный и коммутационная матрица, в которой хранятся соответствия MAC-адресов и портов.
+</p>
+<p>
+Коммутационная матрица формируется динамически в процессе работы коммутатора, т. е. при начальном включении коммутатор работает как хаб.
+</p>
+<p>
+Объединение процессоров возможно тремя способами:
+</p><ol>
+<li>
+Использование коммутационной матрицы. Каждому кадру при поступлении в коммутатор присваивается т. н. тег &mdash; это комбинация бит, которая определяет адрес порта назначения. Такая матрица реализуется в виде микросхемы и наибольшее распространение получила матрица с 3 уровнями вентилей.
+</li>
+<li>
+Использование внутренней высокоскоростной шины. Используется общая шина с разделением времени.
+</li>
+<li>
+Использование разделяемой памяти. 
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-4_8_4_2">Дополнительные функции коммутаторов <br/>
+
+<p>
+Существует 2 разновидности коммутаторов:
+</p><ol>
+<li>
+На лету (on fly). В этом случае коммутатор передаёт пакет без задержки. При этом дополнительные функции коммутатора не поддерживаются и количество коммутаторов в сети накладывается тоже ограничения, что и на концентраторы.
+</li>
+<li>
+С буферизацией. Могут полностью сохранять кадр во внутренней памяти и дополнительно позволяют выполнять следующие функции:
+<ul>
+<li>
+отбрасывание бракованных кадров;
+</li>
+<li>
+поддержка полнодуплексного режима передачи (full duplex). Кадр передаётся по одному кабелю и каждое устройство может исправить принимаемый сигнал, зная передаваемый. При этом скорость обеспечивается до 200 Мб/сек;
+</li>
+<li>
+поддержка виртуальных локальных сетей (VLAN). Позволяет выделить несколько групп портов коммутатора, которые будут изолированы друг от друга. Коммутация между этими группами портов осуществляться не будет. Связь между VLAN может быть организована только с помощью коммутаторов на сетевом уровне. Один порт может входить одновременно в несколько VLANов;
+</li>
+<li>
+поддержка алгоритма покрывающего дерева (spaning tree). Коммутатор запрещает кольцевые топологии, петлевые маршруты и резервные линии. При первоначальном включении коммутаторов с поддержкой покрывающего дерева, они с помощью обмена служебными пакетами автоматически находят все резервные или петлевые связи и строится логическая иерархическая топология поверх существующей. Все связи, которые не вошли в эту топологию объявляются резервными и соответствующие порты закрываются. В случае, если одна из основных связей нарушается, покрывающее дерево строится заново, включая в себя резервные связи;
+</li>
+<li>
+т. к. коммутатор выступает в качестве получателя кадра, ограничение по количеству коммутаторов в сети снимается.
+</li>
+</ul>
+</li>
+</ol>
+
+
+<p>
+Недостатки коммутаторов &mdash; работа с широковещательным трафиком.
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-4_8_5" class="outline-4">
+<h4 id="sec-4_8_5"><span class="section-number-4">4.8.5</span> Маршрутизатор (router) </h4>
+<div class="outline-text-4" id="text-4_8_5">
+
+
+<p>
+<i>Шлюз</i> &mdash; сетевое устройство, имеющее более одного сетевого интерфейса.
+</p>
+<p>
+<i>Роутер</i> &mdash; шлюз, умеющий маршрутизировать сетевые пакеты между сетевыми интерфейсами.
+</p>
+<p>
+Маршрутизатор функционируем не выше сетевого уровня, следовательно информации, передаваемой протоколом сетевого уровня должно быть достаточно для нахождения получателя пакетов.
+</p>
+<p>
+Существует 3 алгоритма маршрутизации:
+</p><ol>
+<li>
+Маршрутизация от источника. В этом случае в маршрутной таблице хранятся сведения о всех промежуточных узлах на пути следования пакетов, либо эта информация передаётся в самом пакете. Используется в статичных сетях, т. е. где количество абонентов фиксировано и связи определены.
+</li>
+<li>
+Одношаговая маршрутизация. В маршрутной таблице хранятся сведения только о следующем маршрутизаторе или о следующем шаге маршрута. Next Gateway.
+</li>
+<li>
+Случайная маршрутизация. Маршрутных таблиц не создаётся, а каждый пакет отправляется в один из подключённых сетевых интерфейсами.
+</li>
+</ol>
+
+
+<p>
+Существует 2 способа формирования маршрутных таблиц:
+</p><ol>
+<li>
+Статическая маршрутизация. Каждая маршрутная таблица формируется вручную администратором.
+</li>
+<li>
+Динамическая маршрутизация. Маршрутизаторы самостоятельно обмениваются маршрутными таблицами с помощью специальных протоколов &mdash; RIP, OSPF.
+</li>
+</ol>
+
+
+<ul>
+<li id="sec-4_8_5_1">Дополнительные функции маршрутизаторов <br/>
+
+<ol>
+<li>
+Отбрасывание бракованных сетевых пакетов. Бракованным пакетом считается пакет, у которого закончился TTL (измеряется в hop'ах). Каждый маршрутизатор вычитает из поля TTL единицу.
+</li>
+<li>
+Фрагментация пакетов. Для каждой сети, подключённой к маршрутизатору он определяет MTU (максимально передаваемый блок) и при передаче большого пакета в сеть с маленьким MTU, он фрагментирует его средствами протокола сетевого уровня. Сбор пакета из фрагмента осуществляется у конечного получателя.
+</li>
+</ol>
+
+
+<p>
+Вместо SNMP используется ICMP.
+</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Канальный уровень в модели OSI </h2>
+<div class="outline-text-2" id="text-5">
+
+
+
+</div>
+
+<div id="outline-container-5_1" class="outline-3">
+<h3 id="sec-5_1"><span class="section-number-3">5.1</span> Методы множественного доступа станций к общему каналу </h3>
+<div class="outline-text-3" id="text-5_1">
+
+
+<ol>
+<li>
+Случайный множественный доступ.
+<ul>
+<li>
+бесконтрольный;
+</li>
+<li>
+бесконтрольный с тактированием;
+</li>
+<li>
+множественный с обнаружением передачи (МДОП);
+</li>
+<li>
+множественный с контролем столкновений (МДКС);
+</li>
+<li>
+МДОП/КС
+</li>
+</ul>
+</li>
+<li>
+Детерминированный множественный доступ.
+<ul>
+<li>
+синхронное разделение времени;
+</li>
+<li>
+асинхронное разделение времени;
+</li>
+<li>
+передача полномочий.
+</li>
+</ul>
+</li>
+<li>
+Комбинированный множественный доступ.
+<ul>
+<li>
+СМД -&gt; ДМД;
+</li>
+<li>
+ДМД -&gt; СМД;
+</li>
+<li>
+гибридный доступ.
+</li>
+</ul>
+</li>
+</ol>
+
+
+
+</div>
+
+<div id="outline-container-5_1_1" class="outline-4">
+<h4 id="sec-5_1_1"><span class="section-number-4">5.1.1</span> Случайный множественный доступ </h4>
+<div class="outline-text-4" id="text-5_1_1">
+
+
+<p>
+Все станции сети равноправны и каждая станция самостоятельно определяет момент начала передачи.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+надёжность;
+</li>
+<li>
+гибкость;
+</li>
+<li>
+открытость.
+</li>
+</ul>
+
+
+<p>
+Недостатки: возможное столкновение пакетов.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+станции равноправны и независимы друг от друга.
+</li>
+<li>
+надёжность высокая. Алгоритм децентрализован.
+</li>
+<li>
+возможность включения станций в работающую сеть.
+</li>
+<li>
+при низкой загрузке сети высокая пропускная способность.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+при высокой загрузке сети низкая пропускная способность.
+</li>
+<li>
+отсутствие гарантированного времени доступа в сеть.
+</li>
+<li>
+невозможность приоритетного доступа в сеть.
+</li>
+</ul>
+
+
+<ul>
+<li id="sec-5_1_1_1">Бесконтрольный метод. "Чистая" ALOHA <br/>
+
+<ol>
+<li>
+Необходимость передачи кадра.
+</li>
+<li>
+Станция передаёт кадр.
+</li>
+<li>
+Станция принимает кадр и проверяет на наличие ошибок.
+</li>
+<li>
+Если в кадре ошибка.
+</li>
+<li>
+Ошибок нет. Станция отсылает положительную квитанцию, подтверждающая успешный приём.
+</li>
+<li>
+Ошибки есть. Станция ничего не отсылает. Положение тайм-аут.
+</li>
+<li>
+Необходимость повторной передачи кадра.
+</li>
+</ol>
+
+
+<p>
+При 50% загрузке сети, количество успешно принятых кадров ~18,6%.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_1_2">Бесконтрольный с тактированием. Синхронная ALOHA <br/>
+
+<p>
+Все станции синхронизированы и начало передачи кадра возможно при получении тактового импульса.
+</p>
+<ol>
+<li>
+Необходимость передачи кадра.
+</li>
+<li>
+Станция ожидает появления тактового импульса.
+</li>
+<li>
+Станция дождалась появления тактового импульса.
+</li>
+<li>
+Станция передаёт кадр.
+</li>
+<li>
+Необходимость повторной передачи кадра.
+</li>
+</ol>
+
+
+<p>
+Для 50% загрузки сети количество успешно переданных кадров 37.2%.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_1_3">Множественный с обнаружением передачи (МДОП) <br/>
+
+<p>
+Станция имеет возможность контролировать занятость канала перед началом передачи.
+</p>
+<ol>
+<li>
+Необходимость передачи кадра.
+</li>
+<li>
+Станция прослушивает канал.
+</li>
+<li>
+Канал свободен.
+</li>
+<li>
+Станция передаёт кадр.
+</li>
+</ol>
+
+
+<p>
+При 50% загрузке 80% успешно переданных кадров.
+</p>
+<p>
+Существует 3 стратегии поведения станции при контроле занятости канала:
+</p><ol>
+<li>
+Ненастойчивый МДОП. Если канал свободен, станция сразу передаёт кадр. Если канал занят, станция откладывает повторную проверку канала на определённый или случайный промежуток времени.
+</li>
+<li>
+1-настойчивый МДОП. Если канала занят, станция настойчиво ждёт его освобождения, после чего с вероятностью 1 передаёт кадр. Если освобождения канал ждут несколько станций вероятностью столкновения 1.
+</li>
+<li>
+p-настойчивый МДОП. Станция настойчиво ждёт освобождения канала, после чего с вероятностью p передаёт кадр в канал. Изменяя значение p, в зависимости от загрузки сети, можно добиться приемлемых показателей вероятности столкновения кадров.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_1_4">Множественный достоинства с контролем столкновений (МДКС) <br/>
+
+<p>
+Станция имеет возможность контролировать канал во время передачи своего кадра. Если передаваемые значения битов не совпадают с принимаемыми из канала, считается, что произошло столкновение.
+</p>
+<ol>
+<li>
+Необходимость передачи кадра.
+</li>
+<li>
+Станция передаёт кадр и прослушивает канал.
+</li>
+<li>
+Условие. Обнаружено ли столкновение в канале.
+</li>
+<li>
+Столкновения нет. Кадр передаётся до конца.
+</li>
+<li>
+Столкновения есть. Станция прерывает передачу кадра.
+</li>
+<li>
+Необходимость повторной передачи.
+</li>
+</ol>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_1_2" class="outline-4">
+<h4 id="sec-5_1_2"><span class="section-number-4">5.1.2</span> Детерминированные методы доступа </h4>
+<div class="outline-text-4" id="text-5_1_2">
+
+
+<ul>
+<li id="sec-5_1_2_1">Синхронное разделение времени <br/>
+
+<p>
+Время работы сети циклически делится на число интервалов соответствующих числу станций подключённых к каналу. Каждой станции во время цикла предоставляется интервал времени, в течение которого она может использовать канал для передачи кадров. Если станции нечего передавать, его интервал не используется.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_2_2">Асинхронное разделение времени <br/>
+
+<p>
+Каждая станция в цикле получает различный интервал времени для передачи, размер которого определяется либо статистически по загруженности станций, либо размер определяется запрашиваемым и оплаченным станцией сервером.
+</p>
+<p>
+Достоинства методов разделения времени:
+</p><ul>
+<li>
+нет столкновений;
+</li>
+<li>
+при 100% загруженности сети пропускная способность канала будет использоваться полностью;
+</li>
+<li>
+гарантированное время доступа в сеть;
+</li>
+<li>
+возможность приоритетного доступа в сеть.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+неэффективно используется пропускная способность при неполной загрузке;
+</li>
+<li>
+низкая надёжность из-за наличия диспетчера.
+</li>
+</ul>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_2_3">Метод передачи полномочий <br/>
+
+<p>
+В сети циркулирует специальный пакет, который даёт станции полномочия на передачу кадров в канал.
+</p>
+<p>
+Если станция получает полномочия, она передаёт разрешённое количество кадров в канал, а затем отдаёт полномочия следующей станции. Если станции нечего передавать, она сразу расстаётся с полномочиями.
+</p>
+<p>
+Достоинства:
+</p><ul>
+<li>
+более эффективное использование пропускной способности;
+</li>
+<li>
+повышается надёжность из-за отсутствия диспетчера;
+</li>
+<li>
+возможна приоритетная передача.
+</li>
+</ul>
+
+
+<p>
+Недостатки:
+</p><ul>
+<li>
+возможность потери или дублирования полномочий;
+</li>
+<li>
+низкая гибкость и открытость сети.
+</li>
+</ul>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_1_3" class="outline-4">
+<h4 id="sec-5_1_3"><span class="section-number-4">5.1.3</span> Комбинированные методы доступа </h4>
+<div class="outline-text-4" id="text-5_1_3">
+
+
+<p>
+Сочетают достоинства случайных и детерминированных методов доступа, т. е. при низкой загрузке сети преимущественно используется случайный множественный доступ, а при высокой детерминированный.
+</p>
+<ul>
+<li id="sec-5_1_3_1">Детерминированный доступ с переходом в случайный <br/>
+
+<p>
+Каждой станции циклически предоставляется временное окно для передачи. Каждое окно состоит из 2 интервалов:
+</p><ul>
+<li>
+интервал управления;
+</li>
+<li>
+интервал передачи.
+</li>
+</ul>
+
+
+<p>
+Алгоритм:
+</p><ol>
+<li>
+Временное окно получило i станция.
+</li>
+<li>
+Есть ли кадр для передачи.
+</li>
+<li>
+В интервал управления станция передаёт служебный кадр о занятости окна.
+</li>
+<li>
+В интервал передачи станция передаёт кадр.
+</li>
+<li>
+Если у станции нет кадра. Станция молчит в интервале управления.
+</li>
+<li>
+Между остальными станциями реализуется СМД в интервал передачи.
+</li>
+<li>
+Временное окно получает i+1 станция.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_3_2">Случайный доступ с переходом в детерминированный <br/>
+Между станциями реализуется МДОП/КС, при этом в цепи циркулируют полномочия, которые получает каждая станция.
+
+<ol>
+<li>
+Полномочия получает i станция.
+</li>
+<li>
+Есть ли кадр для передачи.
+</li>
+<li>
+Станция передаёт кадр, контролируя столкновения.
+</li>
+<li>
+Есть ли столкновение.
+</li>
+<li>
+Все станции-участники столкновения прекращают передачу кадров.
+</li>
+<li>
+Станция, имеющая полномочия возобновляет передачу кадра и доводит её до конца.
+</li>
+<li>
+Реализуется обычное равноправное МДОП/КС между станциями.
+</li>
+<li>
+Полномочия передаются i+1 станции.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_1_3_3">Гибридный доступ <br/>
+
+<p>
+В канале существуют средства измерения загрузки. При малой загрузке используется случайный множественный доступ, при большой детерминированный.
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5_2" class="outline-3">
+<h3 id="sec-5_2"><span class="section-number-3">5.2</span> Стандарт IEEE 802 </h3>
+<div class="outline-text-3" id="text-5_2">
+
+
+<p>
+Спецификации стандарта IEEE 802 определяют основные параметры для физических компонентов в сети, таких как, сетевая карта NIC (network interface card) и сетевой среды network media. Они определяют механизмы доступа к каналу связи и способы передачи данных.
+</p>
+<p>
+Особенностью стандарта IEEE 802 является то, что канальный уровень модели OSI представлен в виде 2-х подуровней: LLC и MAC.
+</p>
+<p>
+<b>LLC</b> подуровень управления логической связью. Функции:
+</p><ol>
+<li>
+Установление и завершение соединения.
+</li>
+<li>
+Управление потоком кадров.
+</li>
+<li>
+Подтверждение правильности приёма кадров.
+</li>
+</ol>
+
+
+<p>
+Реализуется в виде программного модуля (драйвер сетевой карты) и уровень является общим для нескольких сетевых технологий.
+</p>
+<p>
+<b>MAC</b> подуровень доступа к среде. Функции:
+</p><ol>
+<li>
+Управление доступом в передающей среде.
+</li>
+<li>
+Определение границ кадров.
+</li>
+<li>
+Проверка ошибок в кадрах.
+</li>
+<li>
+Распознавание адресов.
+</li>
+</ol>
+
+
+<p>
+MAC уровень реализуется в виде аппаратных компонентов. MAC подуровень уникален для каждой сетевой технологии.
+</p>
+<p>
+Стандарт IEEE 802 включает следующие разделы:
+</p><ol>
+<li>
+802.1 Internet working. Объединение сетей.
+<ul>
+<li>
+содержит обзор проекта 802;
+</li>
+<li>
+определяет механизм управления сетью на MAC подуровнях;
+</li>
+<li>
+задаёт требования к локальным сетям;
+</li>
+</ul>
+</li>
+<li>
+802.2 LLC. Определяет функционирование подуровня LLC.
+</li>
+<li>
+802.3 Ethernet. Описывает протокол Ethernet и в частности метода доступа CSMA/CD (МДОК/КС).
+</li>
+<li>
+802.4 Tokken Bus. Сеть с топологией типа шина, используемая в качестве метода доступа передачу полномочий.
+</li>
+<li>
+802.5 Token Ring. Сеть с передачей полномочий с топологией кольцо.
+</li>
+<li>
+802.6 MAN. Рекомендации по построению городских сетевой (DQDB).
+</li>
+<li>
+802.7 Broadband. Технологическая группа по широковещательной передаче. Содержит рекомендации по широкополосным сетевым технологиям, оборудованию и т. д.
+</li>
+<li>
+802.8 Содержит рекомендации по применению оптоволоконных линий для передачи данных и в частности по их применению в сетях 802.3&ndash;802.6. FDDI.
+</li>
+<li>
+802.9 Технология интегрированной передачи голоса и данных по одной линии. ISDN.
+</li>
+<li>
+802.10 Network security. В нём рассмотрена безопасность сетей.
+</li>
+<li>
+802.11 Wireless network. Технология беспроводной передачи данных.
+</li>
+<li>
+802.12 100VGAnyLAN. Сеть передающая данные на скорости 100Мб на оптоволокне.
+</li>
+</ol>
+
+
+
+</div>
+
+<div id="outline-container-5_2_1" class="outline-4">
+<h4 id="sec-5_2_1"><span class="section-number-4">5.2.1</span> IEEE 802.3 Ethernet </h4>
+<div class="outline-text-4" id="text-5_2_1">
+
+
+<p>
+В основе механизма доступа Ethernet лежит технология CSMA/CD. 
+</p>
+<p>
+Все станции равноправны и любая станция может начать передачу, если канал свободен. Занятость канала проверяется по отсутствию несущей в течении 9,6 мкс (межкадровый интервал).
+</p>
+<p>
+Если канал свободен, станция передаёт кадр и одновременно контролирует наличие столкновений. Если столкновение обнаружено, станция продолжает передачу в течении 32 бит (сигнал jam "затор").
+</p>
+<p>
+Сигнал затора гарантирует, что все станции, участвующие в конфликте гарантированно распознают столкновение. Станция прерывает передачу и возобновляет попытки проверки занят ли канал через случайный промежуток времени, кратный 51,2 мкс, но не более 52 мс. Счётчик попыток станция увеличивает на единицу. Если в течении 16 попыток подряд кадр передать не удаётся из-за коллизий, попытки передачи прекращаются и пользователю передаётся сообщение о невозможности передачи.
+</p>
+<p>
+При 30% загрузке сети алгоритм эффективен.
+</p>
+<ul>
+<li id="sec-5_2_1_1">Стандарт Fast Ethernet <br/>
+
+<p>
+В начале 90-х годов скорость 10 Мб/сек была недостаточна, была создана рабочая группа, которая начала разрабатывать стандарты построения 100 Мб сети.
+</p>
+<p>
+В итоге было разработано 3 варианта построения сети, которые вошли в часть 802.3u:
+</p><ol>
+<li>
+100BaseTX представлял собой развитие 10BaseT. Сохранял стандартную топологию, формат кадра, но требовался кабель 5-ой категории. Необходимость использования другого способа кодирования &mdash; ?? PAM5, 5-уровневый код, который использует двухбитовое кодирование (<i>используется в Gigabite Ethernet</i>).
+</li>
+<li>
+100BaseT4. Разработан специально для сетей, в которых использовалась витая пара 3-ей категории. Было принято решение использовать для передачи данных в одну сторону все 4 пары кабеля UTP, однако, возникало большое количество искажений сигнала из-за перекрёстных наводок. Для уменьшения количества ошибок одну пару кабеля стали использовать для управления и контроля коллизий. Для передачи данных использовался специальный метод предварительного кодирования 8B/6T. 8 бит исходных данных заменялись 6 троичными символами. В результате символьная скорость для каждой витой пары составляла 25 Мбод, что удовлетворяло требованиям полосы пропускания. Ей соответствует 33,3 Мб/с.
+</li>
+<li>
+100BaseFX. Стандарт использующий одномодовое оптоволокно. Длина сегмента до 10 километров. Одно волокно используется для передачи, одно для приёма. Разновидности:
+<ul>
+<li>
+100BaseFX WDM. Использует одномодовое одножильное оптоволокно, работающее в режиме full-duplex. Передача и приём одновременно на разных длинах волны. Длина сегмента до 15 км.
+</li>
+<li>
+100BaseSX. Использует многомодовое оптоволокно и длина сегмента от 300 до 400 метров.
+</li>
+</ul>
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_1_2">Стандарт Gigabit Ethernet. <br/>
+
+<p>
+802.3 ab
+</p><ol>
+<li>
+1000BaseT. Использует витую пару категории 5E. При передаче используются все 4 пары. Метод кодирования PAM5. Частота гармоники 67.5 Мгц. Длина сегмента 100 м.
+</li>
+<li>
+1000BaseTX. Использует витую пару 6 категории. Приём и передача осуществляется по одной паре проводов. Длина сегмента до 100 метров.
+</li>
+<li>
+802.3z.
+<ul>
+<li>
+1000BaseSX. Оптоволокно, длина сегмента 550 метров.
+</li>
+<li>
+1000BaseSX. Одномодовое оптоволокно для сегмента до 5 км.
+</li>
+<li>
+1000BaseLH. Одномодовое оптоволокно. Длина сегмента без повторителей &mdash; 100 км.
+</li>
+<li>
+1000BaseCX. Использует медный твинаксиальный кабель. Длина сегмента до 25 метров.
+</li>
+</ul>
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_1_3">Стандарт 10 Gigabit Ethernet. <br/>
+
+<p>
+802.3 ae
+</p><ol>
+<li>
+10GBaseCX4. Используется медный кабель типа CX4. Длина сегмента до 15 метров.
+</li>
+<li>
+10GBaseSR. Используется многомодовое оптоволокно. Длина сегмента до 82 метров.
+</li>
+<li>
+10GBaseLX4. Используется многомодовое оптоволокно с предварительным уплотнением сигнала по длине волны. Длина сегмента до 300 метров.
+</li>
+<li>
+10GBaseLR/ER. Одномодовое оптоволокно. Длина сегмента от 10 до 40 км.
+</li>
+<li>
+10GBaseSW. Используются для формирования каналов STM-64 синхронной цифровой иерархии и имеет соответствующий физический интерфейс.
+</li>
+<li>
+10GBaseLW.
+</li>
+<li>
+10GBaseEW.
+</li>
+</ol>
+
+
+<p>
+802.3 an
+10GBaseT. Использует экранированную витую пару 6 или выше категории. Длина сегмента 100 м. 
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_2" class="outline-4">
+<h4 id="sec-5_2_2"><span class="section-number-4">5.2.2</span> Сеть 802.8 FDDI </h4>
+<div class="outline-text-4" id="text-5_2_2">
+
+
+<p>
+ANSI X3T9.5.
+</p>
+<p>
+Сеть была разработана 1985 году. Являлся развитием сети Token Ring (802.5).
+</p>
+<p>
+Топология сети &mdash; кольцо (двойное кольцо). Скорость передачи данных 100 Мб/с. Максимальное количество станций &mdash; 1000. Максимальная длина кольца &mdash; 20 км. Максимальное расстояние между 2-мя станциями &mdash; 2 км. Максимальная длина кадра 4500 байт.
+</p>
+<ul>
+<li id="sec-5_2_2_1">Особенности топологии <br/>
+
+<p>
+Топология сети &mdash; двойное кольцо, данные по которым передаются в противоположных направлениях. Одно кольцо &mdash; первичное (primary), второе кольцо &mdash; вторичное (secondary) находится в резерве.
+</p>
+<p>
+Станции бывают двух видов:
+</p><ol>
+<li>
+Станции DA с повышенными требованиями по надёжности. Подключены и к первичным, и к вторичным кольцам.
+</li>
+<li>
+Станции SA с обычными требованиями по надёжности. Подключены только к первичному кольцу.
+</li>
+</ol>
+
+
+<p>
+Режимы работы:
+</p><ol>
+<li>
+Нормальный. Если все узлы функционируют правильно, данные передаются только по первичному кольцу. Вторичное может быть задействовано только в режиме full duplex.
+</li>
+<li>
+Сворачивание кольца. Если выходит из строя узел или линия связи, то адаптеры, ближайшие к месту аварии объединяют первичное и вторичное кольцо, т. к. кольца разнонаправлены, данные продолжают циркулировать между узлами и топология кольцо сохраняется.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_2_2">Метод доступа <br/>
+
+<p>
+По кольцу циркулирует специальный кадр, называемый маркер доступа или token доступа. Когда станция получает маркер, она задерживает его на определённое время (THT) и передаёт кадры в кольцо. По истечении времени THT станция заканчивает передачу последнего кадра и следом за ним отправляет маркер следующей станции.
+</p>
+<p>
+Кадры последовательно проходят через каждую станцию сети. Если станция распознала адрес получателя как свой, она принимает кадр, проверяет ошибки и устанавливает в заголовке кадра 3 флага:
+</p><ol>
+<li>
+флаг успешного распознавания адреса;
+</li>
+<li>
+флаг успешного копирования в буфер;
+</li>
+<li>
+флаг отсутствия ошибок.
+</li>
+</ol>
+
+
+<p>
+После чего кадр дальше отправляется по кольцу. Станция-источник кадров получает свои кадры, прошедшие полный оборот, изымает их из кольца и по состоянию флагов оценивает успешность передачи.
+</p>
+<p>
+Если станции нечего передавать, она не задерживает маркер.
+</p>
+<p>
+Основной недостаток алгоритма &mdash; возможность потери маркера. Для процедуры восстановления таймера используется дополнительный таймер на каждой станции, который считает время оборота маркера (TRT). 
+</p>
+<p>
+Станция, у которой истекло время оборота маркера, может создать маркер и, не удерживая его на время THT, отправить его дальше в кольцо. При этот у следующей станции THT не истечёт, и она воспользуется новым маркером.
+</p>
+<p>
+Если станция, создавшая маркер, получает старый маркер из кольца, она его удаляет.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_2_3">Формат кадра FDDI <br/>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left">P</td><td class="left">SD</td><td class="left">FC</td><td class="left">SA</td><td class="left">DA</td><td class="left">Data</td><td class="left">CRC</td><td class="left">ED</td><td class="left">FS</td></tr>
+<tr><td class="left">16</td><td class="left">1</td><td class="left">1</td><td class="left">2/6</td><td class="left">2/6</td><td class="left">4500</td><td class="left"></td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+<ol>
+<li>
+Преамбула.
+</li>
+<li>
+Стартовый разделитель.
+</li>
+<li>
+Поле управления кадра CLFFZZZZ.
+<ul>
+<li>
+C флаг типа кадра. Синхронный или асинхронный.
+</li>
+<li>
+L флаг длины адреса кадра. MAC или внутренний адрес 2 байта.
+</li>
+<li>
+FF флаг, определяющий тип данных. Либо пользовательские, либо служебные.
+</li>
+<li>
+Z детализирует тип служебного кадра.
+</li>
+</ul>
+</li>
+<li>
+FS поле статуса. ACS00000.
+<ul>
+<li>
+A флаг распознавания адреса.
+</li>
+<li>
+C флаг успешного копирования в буфер.
+</li>
+<li>
+S флаг отсутствия в кадре ошибок.
+</li>
+</ul>
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_2_4">Стек протоколов FDDI <br/>
+
+<p>
+Рисунок
+</p>
+<ol>
+<li>
+PMD. Протокол, зависящий от физической среды. Определяет волоконно-оптический кабель, коннекторы FDDI и оптико-электронный интерфейс.
+</li>
+<li>
+PHY. Физический уровень. Отвечает за синхронизацию приёмника-передатчика, механизм установления тактовой частоты, кодирование декодирование информации, использование кодового преобразования 4B/5B, анализ и обработка служебных символов.
+</li>
+<li>
+MAC подуровень доступа к среде. Управляет доступом станции к среде, управляет процедурой передачи маркера, генерирует CRC и проверяет её, адресует кадры и распознаёт адреса кадров. Удаляет кадры, адресатом которых является.
+</li>
+<li>
+SMD протокол станционного управления. Определяет процедуры управления работой кольца на каждом из уровней. Для каждого уровня существует отдельный набор управляющих сообщений. На уровне PMD они позволяют локализовать неисправность кабеля, на уровне PHY обнаружить неисправные или отключившиеся станции. В обоих случаях управление процедурой сворачивания кольца. На уровне MAC управление восстановлением маркера в случае его потери.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_2_5">Стандарт FFDI2 <br/>
+
+<p>
+Основной задачей сети FDDI является надёжная и гарантированная передача данных между узлами. Однако использование этой сети для передачи изохронного трафика (требующий постоянной пропускной способности во времени) неэффективен.
+</p>
+<p>
+Стандарт FDDI2 обеспечивает улучшенные характеристики по обслуживанию как обычных данных, так и потоковых. Для этого в нём дополнительно используется режим коммутации логических каналов.
+</p>
+<p>
+Пропускная способность канала 100 Мб/с разбивается на 16 разнесённых по частоте каналов со скоростью 6.144 Мб/с. Каждый из подканалов может быть разделён ещё на несколько подканалов с шагом 8 кб/с. Данные по кольцу передаются в формате цикла, который создаёт главная станция, которая назначается каждый раз при инициализации кольца.
+</p>
+<p>
+Циклом является последовательность 15625  бит, передаваемая каждые 125 мкс, т.е. 8000 раз в секунду. Для установления изохронного канал между двумя станциями, они обращаются к главной станции по протоколу SMT с заявкой на требуемую пропускную способность. Если в каждом цикле станции будет предоставлен 1 бит для передачи данных, это будет соответствовать выделенному каналу с пропускной способностью 8 кб/с. Если 1 байт, 64 кбит/с.
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_3" class="outline-4">
+<h4 id="sec-5_2_3"><span class="section-number-4">5.2.3</span> Промышленный стандарт локальных сетей. Модель Pro Way </h4>
+<div class="outline-text-4" id="text-5_2_3">
+
+
+<p>
+Модель Pro Way разработана для автоматизированных систем управления технологическими процессами.
+</p>
+<p>
+Модель Pro Way включает 5 уровней:
+</p><ol>
+<li>
+Прикладной.
+</li>
+<li>
+Сетевой.
+</li>
+<li>
+Магистральный.
+</li>
+<li>
+Канальный.
+</li>
+<li>
+Физический.
+</li>
+</ol>
+
+
+<ul>
+<li id="sec-5_2_3_1">Физический уровень <br/>
+
+<p>
+Устанавливает правила преобразования кадра из формата, принятого для представления в станциях, в оборудовании и т. д. в единый формат, пригодный для передачи по сети.
+</p>
+<p>
+Функции:
+</p><ul>
+<li>
+гальваническая развязка цепей, оборудования и ЛС;
+</li>
+<li>
+контроль качества сигнала;
+</li>
+<li>
+синхронизация приёника и передатчика;
+</li>
+<li>
+контроль состояния сети связи (свободна, занята).
+</li>
+</ul>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_3_2">Канальный уровень <br/>
+
+<p>
+Выполняет следующие функции:
+</p><ul>
+<li>
+обнаружение ошибок в заголовке кадра;
+</li>
+<li>
+обнаружение ошибок в данных. Общая вероятность пропуска или принятия ошибочного бита BER = 3*10<sup>15</sup>.
+</li>
+<li>
+распознавание кадров, адресованных станции.
+</li>
+</ul>
+
+
+<p>
+Формат кадра:
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="right" />
+</colgroup>
+<tbody>
+<tr><td class="left">Преамбула</td><td class="right">&gt;1</td></tr>
+<tr><td class="left">Адрес получателя</td><td class="right">1</td></tr>
+<tr><td class="left">Поле управления</td><td class="right">1</td></tr>
+<tr><td class="left">Адрес отправителя</td><td class="right">1</td></tr>
+<tr><td class="left">КС заголовка</td><td class="right">2</td></tr>
+<tr><td class="left">Данные</td><td class="right">n</td></tr>
+<tr><td class="left">КС данных</td><td class="right">2</td></tr>
+</tbody>
+</table>
+
+
+<p>
+Поле управления:
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left">C</td><td class="left">CA</td><td class="left">IA</td><td class="left">I</td><td class="left">T(2)</td><td class="left">T</td><td class="left">R</td></tr>
+</tbody>
+</table>
+
+
+<ol>
+<li>
+<code>С</code>. Признак командного кадра.
+</li>
+<li>
+<code>CA</code>. Признак подтверждения команды.
+</li>
+<li>
+<code>IA</code>. Признака принятия информационного кадра.
+</li>
+<li>
+<code>I</code>. Признак информационного кадра + <code>T(2)</code> -&gt; команда.
+</li>
+<li>
+<code>T</code>. Номер передаваемого кадра.
+</li>
+<li>
+<code>RR</code>. Номер последнего успешно переданного кадра.
+</li>
+</ol>
+
+
+<p>
+Т. к. для нумерации кадров используется 1 бит, количество неподтверждённых кадров не может превышать одного.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_3_3">Магистральный уровень <br/>
+
+<p>
+Обеспечивает управление доступом станции к каналу. Существует 6 иерархических функций магистрального уровня.
+</p>
+<p>
+Способность станции выполнять ту или иную функцию называется <i>статус</i> станции. Статус может меняться в процессе функционирования сети.
+</p>
+<ol>
+<li>
+Приём. Станция принимает все правильные кадры, которые ей предназначены, отвечать она на них не может.
+</li>
+<li>
+Исполнение. Кроме приёма станция может послать ответ на ей адресованный кадр.
+</li>
+<li>
+Функция инициации.
+<ul>
+<li>
+запросить доступ к магистрали у станции-контролёра;
+</li>
+<li>
+передача кадров станциям-приёмникам;
+</li>
+<li>
+выбор исполнителя для одного шага обмена данными.
+</li>
+</ul>
+</li>
+<li>
+Заказ. Является дополнительным статусов к первым 3-м и позволяет станции изменить свой статус для получения доступа к магистрали ввиду неотложной необходимости (авария).
+</li>
+<li>
+Контроль.
+<ul>
+<li>
+управление доступом к каналу путём установления инициатора для каждого шага обмена данными;
+</li>
+<li>
+контроль работы инициаторов;
+</li>
+<li>
+исключение перегрузок, вносимых инициаторами;
+</li>
+<li>
+контроль отказов инициаторов.
+</li>
+</ul>
+</li>
+<li>
+Распоряжение. Станция-распорядитель передаёт управление магистралью путём назначения станции-контролёра и обеспечивает непрерывность управления при её отказе.
+</li>
+</ol>
+
+
+<p>
+В качестве метода доступа используется передача маркера в сети с топологией шина.
+</p>
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_3_4">Сетевой уровень <br/>
+
+<p>
+Если ОСУ ТП(?) состот из из нескольких магистралей, сетевой уровень организует связь между ними.
+</p>
+<p>
+Управление сетью возлагается на станцию, имеющую статус <i>директора</i>, функции которой следующие:
+</p><ol>
+<li>
+Назначение распорядителей для каждой магистрали.
+</li>
+<li>
+Контроль отказов распорядителей.
+</li>
+</ol>
+
+
+</li>
+</ul>
+<ul>
+<li id="sec-5_2_3_5">Прикладной уровень <br/>
+
+<p>
+Обработка данных, получаемых от оператора, технологических процессов, оборудования и т. д.
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_4" class="outline-4">
+<h4 id="sec-5_2_4"><span class="section-number-4">5.2.4</span> Городские сети (MAN) 802.6 </h4>
+<div class="outline-text-4" id="text-5_2_4">
+
+
+<p>
+Городская сеть занимает промежуточное место между глобальными и локальными сетями и обеспечивает высокоскоростной обмен данными между отдельными компьютерами и локальными сетями в пределах ограниченной территории.
+</p>
+<p>
+В стандарте 802.6 описывает стандарт построения городской сети на основе протокола SMDS.
+</p>
+<p>
+Рисунок.
+</p>
+<p>
+Опорная сеть строится на устройствах коммутации (MSS) со специальным интерфейсом между ними (ISSI). Подключение пользователей к подобной сети происходит по протоколу DQDB.
+</p>
+<ul>
+<li id="sec-5_2_4_1">Протокол DQDB <br/>
+
+<p>
+В протоколе DQDB определено 2 уровня &mdash; физический и канальный.
+</p>
+<p>
+<i>Физический уровень</i> обеспечивает связь по оптоволоконному или широкополосному медному кабелю между оборудованием пользователя и устройством коммутации со скоростями от 1 до 34 Мбит/с. В качестве топологии используются разнонаправленные шины и каждое устройство подключено к обоим из них.
+</p>
+<p>
+Рисунок.
+</p>
+<p>
+На концах на каждой из шин располагается каналообразующее оборудование.
+</p>
+<p>
+<i>Канальный уровень</i>. Данные передаются в виде кадров определённой длины каждые 125 мкс. Формат кадра:
+</p>
+<p>
+Рисунок.
+</p>
+<p>
+В поле ACF существенными являются 3 флага:
+</p><ul>
+<li>
+признак занятости слота;
+</li>
+<li>
+флаг запроса доступа к каналу;
+</li>
+<li>
+режим работы.
+</li>
+</ul>
+
+
+<p>
+Режим предопределённой передачи. Каждая станция получает возможность полного или частичного использования поле данных слота. Размер используемого поля данных определяет пропускную способность виртуального канала, который получает станция. В этом режиме в заголовке слота передаётся идентификатор виртуального канала.
+</p>
+<p>
+Режим случайной передачи. Станции могут использовать слот случайным образом, используя специальный алгоритм распределённой очереди. При этом в заголовке слота устанавливаются все 1.
+</p>
+<p>
+В зависимости от направления передачи одна шина используется для передачи данных, а другая шина для передачи запросов на доступ к каналу. При этом по шине данных значимым будет флаг <i>пустой или занятый слот</i>, а по шине запросов <i>флаг запросов</i>.
+</p>
+<p>
+Для передачи в каждую сторону у станции существует 2 типа счётчиков:
+</p><ul>
+<li>
+RQ счётчик запросов.
+</li>
+<li>
+CD декрементный счётчик.
+</li>
+</ul>
+
+
+<p>
+Счётчик RQ увеличивается на 1 каждый раз, когда по шине запросов передаётся запрос. Счётчик RQ уменьшается на 1 каждый раз, когда по шине данных передаётся пустой слот.
+</p>
+<p>
+Если станции необходимо занять слот в шине A, содержимое счётчика RQ передаётся в CD, счётчика RQ обнуляется, а в шину запросов передаётся запрос.
+</p>
+<p>
+Счётчик CD уменьшается на 1 каждый раз, когда по шине данных передаётся пустой слот. Как только значение счётчика CD достигает 0, станция может использовать первый свободный слот шины A для передачи своих кадров.
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_5" class="outline-4">
+<h4 id="sec-5_2_5"><span class="section-number-4">5.2.5</span> Технологии глобальных сетей </h4>
+<div class="outline-text-4" id="text-5_2_5">
+
+
+<ol>
+<li>
+Dial UP. С помощью аналоговых модемов.
+</li>
+<li>
+PDH. Технология плезиохронной цифровой иерархии.
+</li>
+<li>
+SDH/SONet. Синхронная цифровая иерархия.
+</li>
+<li>
+ISDN. Цифровая сеть с интеграцией услуг.
+</li>
+<li>
+xDSL. Цифровая пользовательская линия.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5_2_6" class="outline-4">
+<h4 id="sec-5_2_6"><span class="section-number-4">5.2.6</span> Аналоговая линия </h4>
+<div class="outline-text-4" id="text-5_2_6">
+
+
+<p>
+Аналоговая телефонная линия предполагает использование аналоговых модемов, которые передают сигнал в полосе частот 0.3&ndash;3.4 кГц. Из-за шумов квантования, возникающих при процедуре АЦП, максимальная скорость передачи данных ограничена 35 кбит/с по теореме Шеннона.
+</p>
+<p>
+Для двухпроводных линий модемы работают по протоколам серии V (V22 (1200 бит/с)&ndash;V34+ (33.6 кбит/с)). V.4x определяют способы помехоустойчивого кодирования, которые улучшают качество связи. V.90 является асинхронным. Скорость нисходящего (56,6 кбит/с), исходящего (33,6 кбит/с).
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_7" class="outline-4">
+<h4 id="sec-5_2_7"><span class="section-number-4">5.2.7</span> Цифровые выделенные линии. Технология PDH </h4>
+<div class="outline-text-4" id="text-5_2_7">
+
+
+<p>
+В качестве передающей среды используется широкополосный медный кабель, либо оптоволоконный. Оборудование PDH существует двух видов: европейская, американский.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="right" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Канал</th><th scope="col" class="right">Количество ТЛФ</th><th scope="col" class="right">Скорость, Мб/с</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">E1</td><td class="right">30</td><td class="right">2.048</td></tr>
+<tr><td class="left">E2</td><td class="right">120</td><td class="right">8.488</td></tr>
+<tr><td class="left">E3</td><td class="right">480</td><td class="right">34.368</td></tr>
+<tr><td class="left">E4</td><td class="right">1920</td><td class="right">139.264</td></tr>
+</tbody>
+</table>
+
+
+<p>
+Недостатки технологии PDH &mdash; простой формат кадра на канальном уровне, в котором для каждого телефонного канала выделяется определённый объём данных.
+</p>
+<p>
+Если телефонный канал не используется, слот заполняется нулями.
+Поэтому по прямому назначению технология не используется, а используется в качестве пользовательского варианта подключения к сети, где в кадре передаются данные без привязки к телефонному каналу.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_8" class="outline-4">
+<h4 id="sec-5_2_8"><span class="section-number-4">5.2.8</span> SDH/SONet </h4>
+<div class="outline-text-4" id="text-5_2_8">
+
+
+<p>
+Использует более сложный формат кадра, в качестве среды передачи &mdash; оптоволокно и обеспечивает более высокие скорости передачи данных.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Канал</th><th scope="col" class="right">Скорость</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">STM1</td><td class="right">155.520</td></tr>
+<tr><td class="left">STM16</td><td class="right">2488</td></tr>
+</tbody>
+</table>
+
+
+<p>
+Т. к. кадр SDH имеет не жёсткую структуру, STM1 позволяет полностью инкапсулировать кадр E4, обеспечивая совместимость технологий.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_9" class="outline-4">
+<h4 id="sec-5_2_9"><span class="section-number-4">5.2.9</span> ISDN </h4>
+<div class="outline-text-4" id="text-5_2_9">
+
+
+<p>
+Основная задача ISDN &mdash; передача голосовых и других видов данных (интернет, факс) по обычной телефонной линии.
+</p>
+<p>
+ISDN предполагает использование следующих разновидностей каналов:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Тип канал</th><th scope="col" class="left">Скорость</th><th scope="col" class="left">Назначение</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">A</td><td class="left">-</td><td class="left">Выделенная телефонная линия</td></tr>
+<tr><td class="left">B</td><td class="left">64 кб/с</td><td class="left">Передача одного голосового канала</td></tr>
+<tr><td class="left">C</td><td class="left">8/16 кб/с</td><td class="left">Передача данных</td></tr>
+<tr><td class="left">D</td><td class="left">16/64 кб/с</td><td class="left">Канал управления</td></tr>
+<tr><td class="left">E</td><td class="left">64 кб/с</td><td class="left">Канал внутренней сигнализации</td></tr>
+<tr><td class="left">H0</td><td class="left">384</td><td class="left"></td></tr>
+<tr><td class="left">H10</td><td class="left">1472</td><td class="left">Передача</td></tr>
+<tr><td class="left">H11</td><td class="left">1536</td><td class="left">данных</td></tr>
+<tr><td class="left">H12</td><td class="left">1920</td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+<p>
+Для пользователя существует BRI &mdash; базовый пользовательский интерфейс, который включает в себя в себя 2B + D = 144 кб/с.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_10" class="outline-4">
+<h4 id="sec-5_2_10"><span class="section-number-4">5.2.10</span> xDSL </h4>
+<div class="outline-text-4" id="text-5_2_10">
+
+
+<p>
+Представляет собой технологию передачи цифровых данных по существующей абонентской сети, в т. ч. и коммутируемой без ограничений использования полосы частот.
+</p>
+<p>
+Все технологии DSL делятся на 2 вида:
+</p><ul>
+<li>
+синхронные;
+</li>
+<li>
+асинхронные.
+</li>
+</ul>
+
+
+<p>
+Синхронные обеспечивают одинаковые скорости исходящего и входящего трафика.
+</p>
+<p>
+Для асихронных скорость входящего потока выше.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="right" /><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Технология</th><th scope="col" class="left">Скорость</th><th scope="col" class="right">Расстояние</th><th scope="col" class="right">ТЛФ пар</th><th scope="col" class="left">Назначение</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">ISDL</td><td class="left">144 кб/с</td><td class="right">5.5</td><td class="right">1</td><td class="left">ISD N</td></tr>
+<tr><td class="left">SDSL</td><td class="left">2.048 Мб/с</td><td class="right">3</td><td class="right">1</td><td class="left">E1</td></tr>
+<tr><td class="left">HDSL</td><td class="left">2.048 Мб/с</td><td class="right">4.5</td><td class="right">2</td><td class="left">E1</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">ADSL</td><td class="left">8.0 Мб/с, 1 Мб/с</td><td class="right">5.5</td><td class="right">1</td><td class="left">Inet</td></tr>
+<tr><td class="left">ADSL lite</td><td class="left">1.5 Мб/с, 0.5 Мб/с</td><td class="right">5.5</td><td class="right">1</td><td class="left">Inet без сплитера</td></tr>
+<tr><td class="left">ADSL 2 Annex J</td><td class="left">12 Мб/с, 3.5 Мб/с</td><td class="right">5.5</td><td class="right">1</td><td class="left">Inet</td></tr>
+<tr><td class="left">ADSL 2+ Annex M</td><td class="left">24 Мб/с, 3.5 Мб/с</td><td class="right">5.5</td><td class="right">1</td><td class="left">Inet</td></tr>
+</tbody>
+<tbody>
+<tr><td class="left">VDSL</td><td class="left">65 Мб/с, 1.5 Мб/с</td><td class="right">300 м (1200 м)</td><td class="right">Коакс.</td><td class="left">Телевидение по</td></tr>
+<tr><td class="left"></td><td class="left"></td><td class="right"></td><td class="right"></td><td class="left">запросу</td></tr>
+</tbody>
+</table>
+
+
+<ul>
+<li id="sec-5_2_10_1">Спектр ADSL сигнала <br/>
+
+<p>
+Рисунок. В случае, когда в канале существует сосредоточенная помеха, часть диапазона, которая затрагивается, исключается из общего спектра сигнала. Скорость при этом уменьшается, но связь остаётся устойчивой.
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-5_2_11" class="outline-4">
+<h4 id="sec-5_2_11"><span class="section-number-4">5.2.11</span> Протоколы канального уровня для выделенных линий </h4>
+<div class="outline-text-4" id="text-5_2_11">
+
+</div>
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Максим Захаров
+</p>
+<p class="date"> Date: 2011-01-04 09:40:40 MSK</p>
+<p class="creator">HTML generated by org-mode 7.5 in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
