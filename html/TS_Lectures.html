@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title>Теория систем. Лекции.</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-01-04 09:32:27 MSK"/>
+<meta name="author" content="Максим Захаров"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript" src="http://orgmode.org/org-info.js"></script>
+<script type="text/javascript" >
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "3");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "content");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Теория систем. Лекции.</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Лекция 1 </a></li>
+<li><a href="#sec-2">2 Лекция 2 </a></li>
+<li><a href="#sec-3">3 Лекция 3 </a></li>
+<li><a href="#sec-4">4 Лекция 4. </a></li>
+<li><a href="#sec-5">5 Лекция 5. </a></li>
+<li><a href="#sec-6">6 Лекция 6. </a>
+<ul>
+<li><a href="#sec-6_1">6.1 Основные определения системного анализа </a></li>
+</ul>
+</li>
+<li><a href="#sec-7">7 Лекция 7. </a></li>
+<li><a href="#sec-8">8 Лекция 8. </a></li>
+<li><a href="#sec-9">9 Лекция 9. </a></li>
+<li><a href="#sec-10">10 Практика </a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Лекция 1 <span class="timestamp-wrapper"> <span class="timestamp">2010-09-02 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-1">
+
+
+<p>
+Главное отличие естественных систем от искусственных &ndash; "известность" цели функционирования.
+</p>
+<p>
+Искусственные системы делятся:
+</p><ol>
+<li>
+С управлением.
+</li>
+<li>
+Без управления.
+</li>
+</ol>
+
+
+<p>
+Под управлением понимается процесс формирования целенаправленного поведения системы посредством информационных воздействий. Информационные воздействия могут вырабатываться человеком или устройством.   
+</p>
+<p>
+Задачи управления:
+</p><ol>
+<li>
+Задача целеполагания. Определение требуемого состояния и поведения системы.
+</li>
+<li>
+Задача стабилизации. Удержание системы в существующем состоянии в условиях возмущающих воздействий.
+</li>
+<li>
+Выполнение программы. Перевод системы в требуемое состояние в условиях, когда значения управляемых величин изменяются по известным детерминированным законам.
+</li>
+<li>
+Задача слежения. Удержание системы на заданной траектории в условиях, когда законы изменения управляемых величин неизвестны или изменяются.
+</li>
+<li>
+Задача оптимизации. Удержание и перевод системы в состояние с экстремальными значениями характеристик при заданных условиях или ограничениях.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Лекция 2 <span class="timestamp-wrapper"> <span class="timestamp">2010-09-09 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+<img src="TS_pictures/sistema.png"  alt="TS_pictures/sistema.png" />
+</p>
+<p>
+Индивидуум или группа индивидуумов, имеющих право принимать окончательное решение по выбору одно из нескольких управляющих воздействий, называется лицом, принимающим решения (ЛПР).
+</p>
+<p>
+Функции системы управления:
+</p><ol>
+<li>
+Коммуникационная (обмена информацией).
+</li>
+<li>
+Рутинные функции обработки информации.
+</li>
+<li>
+Принятия решения.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Лекция 3 <span class="timestamp-wrapper"> <span class="timestamp">2010-09-16 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-3">
+
+
+<p>
+Пути совершенствования систем с управлением:
+</p><ol>
+<li>
+Оптимизация численности управленческого персонала.
+</li>
+<li>
+Использование новых способов организации системы управления.
+</li>
+<li>
+Применение новых методов решения управленческих задач.
+</li>
+<li>
+Изменение структуры системы управления.
+</li>
+<li>
+Перераспределение функций, задач в системе управления.
+</li>
+<li>
+Механизация управленческого труда.
+</li>
+<li>
+Автоматизация.
+</li>
+</ol>
+
+
+<p>
+Цели автоматизации управления:
+</p><ol>
+<li>
+Уменьшить время принятия решений.
+</li>
+<li>
+Улучшить качество принимаемых решений.
+</li>
+</ol>
+
+
+<p>
+Эти цели достигаются путями:
+</p><ol>
+<li>
+Повышение оперативности управления.
+</li>
+<li>
+Снижение трудозатрат ЛПР.
+</li>
+<li>
+Повышение степени обоснованности принятых решений.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Лекция 4. <span class="timestamp-wrapper"> <span class="timestamp">2010-09-23 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-4">
+
+
+<p>
+<i>Системный анализ</i> &mdash; это методология решения проблем, основанная на структуризации систем и количественном сравнении альтернатив.
+</p>
+<p>
+Основные задачи:
+</p><ol>
+<li>
+Декомпозиция. Это представление системы в виде подсистем, состоящих из более мелких элементов.
+</li>
+<li>
+Анализ. Она состоит в нахождении свойств системы или свойств среды, окружающую систему. 
+</li>
+<li>
+Синтез. Состоит в том, что по описанию закона преобразования необходимо реализовать алгоритм. При решении задачи синтеза часто решается задача оптимизации &mdash; выбор из нескольких альтернатив оптимального.
+<ul>
+<li>
+однокритериальная;
+</li>
+<li>
+многокритериальная.
+</li>
+</ul>
+</li>
+</ol>
+
+
+<p>
+Классификация систем:
+</p><ol>
+<li>
+Физическая.
+</li>
+<li>
+Абстрактная.
+</li>
+</ol>
+
+
+<p>
+Системы делятся на:
+</p><ol>
+<li>
+Простые.
+</li>
+<li>
+Сложные:
+<ul>
+<li>
+робастность. Способность сохранять полную или частичную работоспособность при отказе некоторых элементов;
+</li>
+<li>
+эмерджентность (интегративность, целостность). Свойства системы большее, чем совокупность свойств, составляющих её элементы;
+</li>
+<li>
+наличие большого числа разнообразных разнородных связей между элементами
+<ul>
+<li>
+структурные;
+</li>
+<li>
+функциональные;
+</li>
+<li>
+казуальные;
+</li>
+<li>
+информационные;
+</li>
+<li>
+пространственно-временные.
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Лекция 5. <span class="timestamp-wrapper"> <span class="timestamp">2010-09-30 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-5">
+
+
+<p>
+Системы могут быть:
+</p><ol>
+<li>
+Естественные.
+</li>
+<li>
+Искусственные.
+</li>
+</ol>
+
+
+<p>
+\(x(t)\) &mdash; множество функций входных воздействий.
+</p>
+<p>
+\(y(t)\) &mdash; множество выходных характеристик системы.
+</p>
+<p>
+\(z(t)\) &mdash; множество состояний системы.
+</p>
+<p>
+В зависимости от вида этих функций системы делят на:
+</p><ol>
+<li>
+Дискретные.
+</li>
+<li>
+Непрерывные.
+</li>
+</ol>
+
+
+<p>
+Деление не дискретные и непрерывные происходит с точки зрения исследователя.
+</p>
+<ol>
+<li>
+Стохастические. Функция входа может иметь случайные характер, или функция множества состояный носит случайный характер.
+</li>
+<li>
+Детерминированные. Все состояния чётко определены.
+
+</li>
+</ol>
+
+<ol>
+<li>
+Открытые. Системы, в которых неоднозначность реакции на воздействие нельзя объяснить разницей состояний.
+</li>
+<li>
+Закрытые.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Лекция 6. <span class="timestamp-wrapper"> <span class="timestamp">2010-10-07 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-6">
+
+
+
+</div>
+
+<div id="outline-container-6_1" class="outline-3">
+<h3 id="sec-6_1"><span class="section-number-3">6.1</span> Основные определения системного анализа </h3>
+<div class="outline-text-3" id="text-6_1">
+
+
+<p>
+<i>Элемент</i> &mdash; некоторый объект, обладающий рядом важных свойств и реализующий в системе определённый закон функционирования, внутренняя структура которого не рассматривается.
+</p>
+<p>
+На вход системы 3 воздействия:
+</p><ol>
+<li>
+Управляющие.
+</li>
+<li>
+Неуправляемые.
+</li>
+<li>
+Возмущающие.
+</li>
+</ol>
+
+
+<p>
+<i>Среда</i> &mdash; множество объектов, вне данной системы, которая оказывает влияние на систему и сами находятся под воздействием системы.
+</p>
+<p>
+<i>Подсистема</i> &mdash; часть системы, выделенная по определённому признаку, обладающая некоторой самостоятельностью и допускающая разложения на элементы.
+</p>
+<p>
+<i>Характеристика</i> &mdash; это, что отражает некоторые свойства системы.
+Характеристика задаётся кортежом &lt;имя, {значения}&gt;.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Лекция 7. <span class="timestamp-wrapper"> <span class="timestamp">2010-10-14 Чт.</span></span> </h2>
+<div class="outline-text-2" id="text-7">
+
+
+<p>
+Характеристики бывают количественные и качественные. Количественные характеристики называются параметрами.
+</p>
+<p>
+Оптимизация может быть однокритериальной и многокритериальной.
+</p>
+<p>
+Под свойством понимают то, что обуславливает отличие одного объекта от другого или наоборот сходство между ними и проявляющееся во взаимодействии с другими объектами. Характеристики системы отражают её свойства.
+</p>
+<p>
+Свойства делят на внутренние и внешние. Внешние свойства можно наблюдать, они проявляются в виде характеристик системы. Внутренние свойства наблюдать нельзя, они проявляются в виде состояний системы. Внутренние свойства являются причиной внешние свойств.
+</p>
+<p>
+При исследовании свойства задаются в виде отношений. Существует несколько форм представления отношений:
+</p><ol>
+<li>
+Функциональная.
+</li>
+<li>
+Матричная или табличная.
+</li>
+<li>
+Логические.
+</li>
+<li>
+Графовые.
+</li>
+<li>
+Представления сечениями.
+</li>
+<li>
+Алгоритмическая.
+</li>
+</ol>
+
+
+<p>
+Одна из основных целей системного анализа &mdash; выявление внутренних свойств системы, определяющих её поведение. По структуре делятся на простые и интегральные.
+</p>
+<p>
+Внутренние свойства конструируются в нашем сознании логически и недоступны наблюдению.
+</p>
+<p>
+Горизонтальные уровни анализа называются иерархическими. Вертикальные называются аспектами.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Лекция 8. <span class="timestamp-wrapper"> <span class="timestamp">2010-10-21 Чт.</span></span> </h2>
+<div class="outline-text-2" id="text-8">
+
+
+<p>
+Закон функционирования описывает процесс функционирования элемента для всей системы в целом.
+</p>
+<p>
+Закон функционирования
+\(y(t) = F(x, n, u, t)\)
+x - полезная нагрузка
+n - мешающее воздействие
+u - управляющее воздействие
+</p>
+<p>
+Поведение системы во времени &mdash; это изменение состояний системы.
+</p>
+<p>
+Цель &mdash; это ситуация или область ситуации, которая должна быть достигнута при функционировании системы за определённый промежуток времени.
+</p>
+<p>
+Показатель &mdash; характеристика, отражающая качества системы.
+Показатели делятся на:
+</p><ol>
+<li>
+Частные показатели качества.
+</li>
+<li>
+Обобщённые показатели качества.
+</li>
+</ol>
+
+
+<p>
+Кроме показателей качества есть показатели эффективности.
+</p>
+<p>
+Различие между показателями качества и эффективности состоит в том, что показатель эффективности характеризует процесс (алгоритм) и эффект от функционирования системы, а показатели качества &mdash; пригодность системы для использования по назначению.
+</p>
+<p>
+Связь &mdash; вид отношений между элементами системы, который проявляется в виде обмена. Связи делят на:
+</p><ul>
+<li>
+внутренние &mdash; между элементами;
+</li>
+<li>
+внешние. Определение внешних связей позволяет выделить систему из среды.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Лекция 9. <span class="timestamp-wrapper"> <span class="timestamp">2010-10-28 Чтв</span></span> </h2>
+<div class="outline-text-2" id="text-9">
+
+
+<p>
+Различают несколько видов связей:
+</p><ol>
+<li>
+Структурная. Задаются в графовой и матричной форме.
+<ul>
+<li>
+иерархические;
+</li>
+<li>
+сетевые;
+</li>
+</ul>
+</li>
+<li>
+Функциональные.
+</li>
+<li>
+Пространственно-временные. Задаются как функции, функционалы и операторы.
+</li>
+<li>
+Причинно-следственные. Описываются на языке формальной логики.
+</li>
+<li>
+Информационные связи. В виде инфологической модели.
+</li>
+</ol>
+
+
+<p>
+Выделение связи позволяет судить о сложности системы.
+</p>
+<p>
+Алгоритм функционирования &mdash; метод получения выходных характеристик с учётом входных воздействий, управляющих, мешающих воздействий внешней среды.
+</p>
+<p>
+Качество &mdash; совокупность существенных свойств объекта, обуславливающих его использование по назначению. По одному интегральному свойству через один обобщённый показатель качества системы.
+</p>
+<p>
+Процесс &mdash; совокупность состояний системы, упорядоченная по изменению какого-либо параметра.
+</p>
+<p>
+Совокупность всех возможных состояний называется пространством состояний.
+</p>
+<p>
+Эффективность процесса &mdash; степень его приспособленности к достижению цели.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Практика </h2>
+<div class="outline-text-2" id="text-10">
+
+
+<p>
+Можно выделить следующие типы виртуализации:
+</p><ol>
+<li>
+Программную виртуализацию:
+<ul>
+<li>
+динамическая виртуализация;
+</li>
+<li>
+паравиртуализация.
+</li>
+</ul>
+</li>
+<li>
+Аппаратную виртуализации.
+</li>
+</ol>
+
+
+<p>
+Гипервизоры:
+</p><ol>
+<li>
+Первого типа bare metal.
+<ul>
+<li>
+Xen.
+</li>
+<li>
+Hyper-V.
+</li>
+<li>
+KVM.
+</li>
+<li>
+VMWare ESX.
+</li>
+</ul>
+</li>
+<li>
+Второго типа (как задача в обычной ОС).
+<ul>
+<li>
+MS Virtual PC 2007.
+</li>
+<li>
+VirtualBox.
+</li>
+<li>
+VMWare.
+</li>
+<li>
+Parallels.
+
+<p>
+GUEST
+</p></li>
+</ul>
+</li>
+</ol>
+
+<p>H|    | 32 | 64 |
+O|-&mdash;+-&mdash;+-&mdash;|
+S| 32 |  + |  В |
+T| 64 |  В |  В |
+</p>
+<p>
+В &mdash; обязательная поддержка аппаратной виртуализации процессором.
+</p>
+<ol>
+<li>
+NAT.
+</li>
+<li>
+Мост.
+</li>
+<li>
+Внутренняя сеть.
+</li>
+<li>
+Хост адаптер.
+</li>
+</ol>
+
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Максим Захаров
+</p>
+<p class="date"> Date: 2011-01-04 09:32:27 MSK</p>
+<p class="creator">HTML generated by org-mode 7.5 in emacs 23</p>
+</div>
+</div>
+</body>
+</html>
