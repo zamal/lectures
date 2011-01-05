@@ -1,7 +1,7 @@
 #+TITLE: Теория систем
 #+AUTHOR: Максим Захаров
 #+STARTUP: indent
-#+INFOJS_OPT: path:other/org-info.js view:content toc:nil ltoc:nil
+#+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
 #+LINK_HOME: index.html
 #+LINK_UP: SiSPI_Lectures.html
 
