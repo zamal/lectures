@@ -1,7 +1,9 @@
 #+TITLE: Моделирование систем
 #+AUTHOR: Максим Захаров
 #+STARTUP: indent
-#+INFOJS_OPT: view:content toc:nil ltoc:nil
+#+INFOJS_OPT: path:other/org-info.js view:content toc:nil ltoc:nil
+#+LINK_HOME: index.html
+#+LINK_UP: MS_Lectures.html
 
 * Общие сведения
   CLOCK: [2010-09-14 Втр 10:01]
