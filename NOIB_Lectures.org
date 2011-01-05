@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+LINK_UP: NOIB_Lectures.html
 
+[[file:other/NOIB_Lectures.pdf][Скачать в PDF]]
+
 * ОБЕСПЕЧЕНИЕ БЕЗОПАСНОСТИ СЕТЕЙ ЭЛЕКТРОСВЯЗИ
 
 ** Обеспечение безопасности сетей электросвязи

@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+LINK_UP: SiSPI_Lectures.html
 
+[[file:other/TS_Lectures.pdf][Скачать в PDF]]
+
 * Лекция 1 <2010-09-02 Чтв>
 
 Главное отличие естественных систем от искусственных -- "известность" цели функционирования.

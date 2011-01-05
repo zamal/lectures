@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+LINK_UP: MS_Lectures.html
 
+[[file:other/MS_Lectures.pdf][Скачать в PDF]]
+
 * Общие сведения
   CLOCK: [2010-09-14 Втр 10:01]
 

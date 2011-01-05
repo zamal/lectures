@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+LINK_UP: SiSPI_Lectures.html
 
+[[file:other/SiSPI_Lectures.pdf][Скачать в PDF]]
+
 * Логическая многоуровневая организация ЗТКС
   CLOCK: [2010-09-02 Чтв 11:58]--[2010-09-02 Чтв 13:17] =>  1:19
 

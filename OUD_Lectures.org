@@ -5,6 +5,8 @@
 #+LINK_HOME: index.html
 #+LINK_UP: OUD_Lectures.html
 
+[[file:other/OUD_Lectures.pdf][Скачать в PDF]]
+
 * Основные понятия управленческой деятельности
   CLOCK: [2010-09-08 Срд 08:25]--[2010-09-08 Срд 09:23] =>  0:58
 
