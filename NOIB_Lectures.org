@@ -4,7 +4,7 @@
 #+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
 #+INCLUDE: "other/metrika.org"
 
-[[file:index.org][На главную]] | [[file:other/NOIB_Lectures.pdf][Сохранить в PDF]]
+[[file:index.org][На главную]] | [[file:other/NOIB_Lectures.pdf][Скачать в PDF]]
 
 * ОБЕСПЕЧЕНИЕ БЕЗОПАСНОСТИ СЕТЕЙ ЭЛЕКТРОСВЯЗИ
 

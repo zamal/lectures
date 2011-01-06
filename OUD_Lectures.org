@@ -4,7 +4,7 @@
 #+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
 #+INCLUDE: "other/metrika.org"
 
-[[file:index.org][На главную]] | [[file:other/OUD_Lectures.pdf][Сохранить в PDF]]
+[[file:index.org][На главную]] | [[file:other/OUD_Lectures.pdf][Скачать в PDF]]
 
 * Основные понятия управленческой деятельности
   CLOCK: [2010-09-08 Срд 08:25]--[2010-09-08 Срд 09:23] =>  0:58

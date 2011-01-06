@@ -4,7 +4,7 @@
 #+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
 #+INCLUDE: "other/metrika.org"
 
-[[file:index.org][На главную]] | [[file:other/IBST_Lectures.pdf][Сохранить в PDF]]
+[[file:index.org][На главную]] | [[file:other/IBST_Lectures.pdf][Скачать в PDF]]
 
 * Протокол IP
   CLOCK: [2010-09-08 Срд 10:03]--[2010-09-08 Срд 11:23] =>  1:20
