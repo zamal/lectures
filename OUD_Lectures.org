@@ -4,6 +4,7 @@
 #+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
 #+LINK_HOME: index.html
 #+LINK_UP: OUD_Lectures.html
+#+INCLUDE: "other/metrika.org"
 
 [[file:other/OUD_Lectures.pdf][Скачать в PDF]]
 
@@ -560,28 +561,3 @@
 7) Оформление и согласование решения. Под согласованием понимается процесс доведения сути решения до будущего исполнителя, при этом необходимо получить мнение по поводу принимаемого решения будущего исполнителя, т. к. вероятность быстрой и эффективной реализации решения значительно возрастает, когда исполнители имеют возможность высказать своё мнение по поводу принимаемого решения, внести предложения и замечания. Соответственно, лучший способ согласования решения --- привлечение исполнителей к процессу его принятия. Оформление решения --- это процесс отражения принятого решения в документальной форме. В оформленном решении должны быть установлены подразделения и работники, которые будут заниматься реализацией решения, а также сроки и ответственные по каждому блоку работ.
 8) Управление реализацией. На этом этапе определяется комплекс работ и ресурсов, необходимых для эффективной реализации решения, а также производится распределение их по исполнителям и срокам.
 9) Контроль и оценка результатов. После того, как решение окончательно введено в действие, необходимо убедиться, оправдывает ли оно себя. Этой цели служит этап контроля, выполняющий в данном процессе также функцию обратной связи. На этом этапе производится измерение и оценка последствий решения или сопоставление фактических результатов с теми, которые планировалось получить.
-
-#+BEGIN_HTML
-<!-- Yandex.Metrika informer -->
-<a href="http://metrika.yandex.ru/stat/?id=3076903&amp;from=informer"
-target="_blank"><img src="//bs.yandex.ru/informer/3076903/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-width="88" height="31" alt="Яндекс.Метрика" border="0" /></a>
-<!-- /Yandex.Metrika informer -->
-
-<!-- Yandex.Metrika counter -->
-<div style="display:none;"><script type="text/javascript">
-(function(w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter3076903 = new Ya.Metrika(3076903);
-             yaCounter3076903.clickmap(true);
-             yaCounter3076903.trackLinks(true);
-        
-        } catch(e) {}
-    });
-})(window, 'yandex_metrika_callbacks');
-</script></div>
-<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/3076903" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-#+END_HTML

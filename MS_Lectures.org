@@ -4,6 +4,7 @@
 #+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
 #+LINK_HOME: index.html
 #+LINK_UP: MS_Lectures.html
+#+INCLUDE: "other/metrika.org"
 
 [[file:other/MS_Lectures.pdf][Скачать в PDF]]
 
@@ -378,30 +379,3 @@ $N = \frac{P^*(1-P^*)}{(\frac{d}{K})^2}$
 В модели сравниваются буквы на приёме и передаче, на основе чего делается вывод о воздействии имплульсной помехи при различных видах модуляции.
 
 Импульсными помехами называют случайные кратковременные искажения амплитуды сигнала. Импульсные помехи проявляются в виде резких, "неестественных" выбросов амплитуды отдельных небольших групп отсчетов наблюдаемого сигнала. Импульсная помеха описывается амплитудой и скважностью. Скважность характеризует "плотность" импульсных помех в сигнале и определяется как отношение длительности импульсной помехи к средней величине длительности интервала между соседними помехами. Данные параметры задаются в процессе моделирования.
-
-
-
-#+BEGIN_HTML
-<!-- Yandex.Metrika informer -->
-<a href="http://metrika.yandex.ru/stat/?id=3076903&amp;from=informer"
-target="_blank"><img src="//bs.yandex.ru/informer/3076903/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-width="88" height="31" alt="Яндекс.Метрика" border="0" /></a>
-<!-- /Yandex.Metrika informer -->
-
-<!-- Yandex.Metrika counter -->
-<div style="display:none;"><script type="text/javascript">
-(function(w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter3076903 = new Ya.Metrika(3076903);
-             yaCounter3076903.clickmap(true);
-             yaCounter3076903.trackLinks(true);
-        
-        } catch(e) {}
-    });
-})(window, 'yandex_metrika_callbacks');
-</script></div>
-<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/3076903" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-#+END_HTML
