@@ -2,11 +2,9 @@
 #+AUTHOR: Максим Захаров
 #+STARTUP: indent
 #+INFOJS_OPT: path:other/org-info.js view:content ltoc:nil ftoc:t tdepth:1
-#+LINK_HOME: index.html
-#+LINK_UP: SiSPI_Lectures.html
 #+INCLUDE: "other/metrika.org"
 
-[[file:other/TS_Lectures.pdf][Скачать в PDF]]
+[[file:index.org][На главную]] | [[file:other/TS_Lectures.pdf][Сохранить в PDF]]
 
 * Лекция 1 <2010-09-02 Чтв>
 
