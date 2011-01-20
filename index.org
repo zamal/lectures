@@ -1,9 +1,4 @@
 #+TITLE: Лекции
+#+INCLUDE: "other/metrika.org"
 
-   + [[file:IBST_Lectures.org][Информационная безопасность систем и технологий]]
-   + [[file:KOE_Lectures.org][Квантовая и оптическая электроника]]
-   + [[file:MS_Lectures.org][Моделирование систем]]
-   + [[file:NOIB_Lectures.org][Нормативное обеспечение информационной безопасности]]
-   + [[file:OUD_Lectures.org][Основы управленческой деятельности]]
-   + [[file:SiSPI_Lectures.org][Системы и сети передачи информации]]
-   + [[file:TS_Lectures.org][Теория систем]]
+[[file:images/Nlo.jpg]]
